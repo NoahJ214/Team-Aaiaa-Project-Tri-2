@@ -14,23 +14,23 @@ def index():
 # connects /kangaroos path to render kangaroos.html
 @app.route("/ritvik/")
 def ritvik():
-    return render_template("templates/ritvik.html")
+    return render_template("ritvik.html")
 
 @app.route("/william/")
 def william():
-    return render_template("templates/william.html")
+    return render_template("william.html")
 
 @app.route("/timothy/")
 def timothy():
-    return render_template("templates/timothy.html")
+    return render_template("timothy.html")
 
 @app.route("/nathan/")
 def nathan():
-    return render_template("templates/nathan.html")
+    return render_template("nathan.html")
 
 @app.route("/noah")
 def noah():
-    return render_template("templates/noah.html")
+    return render_template("noah.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
