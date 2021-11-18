@@ -6,6 +6,27 @@ app = Flask(__name__)
 
 
 # connects default URL to render index.html
+
+@app.route('/william/')
+def greet6():
+    return render_template("william.html")
+
+@app.route('/william/', methods=['GET', 'POST'])
+def greet7():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("william.html", name1=name)
+    # starting and empty input default
+    return render_template("william.html", name1="World")
+
+
+
+
+
+
+
 @app.route('/')
 def index():
     return render_template("index.html")
