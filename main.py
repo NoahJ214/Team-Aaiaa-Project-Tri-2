@@ -21,13 +21,7 @@ def greet7():
     # starting and empty input default
     return render_template("william.html", name1="World")
 
-
-
-
-
-
-
-@app.route('/')
+@app.route('//')
 def index():
     return render_template("index.html")
 
