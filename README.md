@@ -10,7 +10,7 @@
 
 
 ## [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1)
-## [Insights with Contributors and Commits]()
+## [Insights with Contributors and Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/graphs/contributors)
 ## [Tim, Nat, and Noa Journal](https://docs.google.com/document/d/1UPgaLH_43fjmX9X04RuxzXEYBlq-SOSX3XvEvOp0yCE/edit?usp=sharing)
 ## [Ritvik and William Journal](https://docs.google.com/document/d/10kLbZfA-buoykTZGUwkormMoxzioGr417bbY6eDFoos/edit?usp=sharing)
 
@@ -33,8 +33,8 @@
 | **Task** | **Evidence** |
 | ------------- | ------------- |
 | Nathan: Create and assign tasks on scrumboard | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki)  |
-| Timmy Lin: | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/93d738aed3ccbcad81041b9f6ad47fc0bd16426b)  |
-| Noah Jeng | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/3fcb9e4d0bc8cae0e6f2d77a29b9ab3dbacf7a00)  |
-| William Du | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/e6a7bada6e72b3205a773e502ee5ddfa0c534b6b)  |
-| Ritvik Keerthi | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/292b34a551430b08908d8422a8647a1b038b1418)  | 
+| Timmy Lin: | [Ticket]()  |
+| Noah Jeng | [Ticket]()  |
+| William Du | [Ticket]()  |
+| Ritvik Keerthi | [Ticket]()  | 
 
