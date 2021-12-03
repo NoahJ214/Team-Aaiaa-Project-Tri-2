@@ -32,9 +32,9 @@
 #### Progress
 | **Task** | **Evidence** |
 | ------------- | ------------- |
-| Nathan: Create and assign tasks on scrumboard, create management plan for commit organization| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki)  |
+| Nathan: Create and assign tasks on scrumboard| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki)  |
 | Timmy Lin: Put together Deployment wiki and brainwrite | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Deployment)  |
-| Noah Jeng | [Ticket]()  |
+| Noah Jeng: Create management plan to prevent commit and pull issues| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Management-Plan)  |
 | William Du | [Ticket]()  |
 | Ritvik Keerthi: Made 10 key ideas and begin database work | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/9)  | 
 
