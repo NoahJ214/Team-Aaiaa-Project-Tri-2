@@ -9,9 +9,9 @@
 ## [How to Contribute]
 
 
-## [Scrum Board]()
+## [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1)
 ## [Insights with Contributors and Commits]()
-## [Tim, Nat, and Noa Journal]()
+## [Tim, Nat, and Noa Journal](https://docs.google.com/document/d/1UPgaLH_43fjmX9X04RuxzXEYBlq-SOSX3XvEvOp0yCE/edit?usp=sharing)
 ## [Ritvik and William Journal](https://docs.google.com/document/d/10kLbZfA-buoykTZGUwkormMoxzioGr417bbY6eDFoos/edit?usp=sharing)
 
 ## CONTRIBUTORS
