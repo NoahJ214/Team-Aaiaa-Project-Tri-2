@@ -36,5 +36,5 @@
 | Timmy Lin: Put together Deployment wiki and brainwrite | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Deployment)  |
 | Noah Jeng | [Ticket]()  |
 | William Du | [Ticket]()  |
-| Ritvik Keerthi: Made 10-12 key ideas | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/9)  | 
+| Ritvik Keerthi: Made 10 key ideas | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/9)  | 
 
