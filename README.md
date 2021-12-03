@@ -27,7 +27,7 @@
 ## Time Table 
 
 
-### Sprint 7,8 Week 8  
+### Week 1 
 
 #### Progress
 | **Task** | **Evidence** |
