@@ -33,7 +33,7 @@
 | **Task** | **Evidence** |
 | ------------- | ------------- |
 | Nathan: Create and assign tasks on scrumboard | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki)  |
-| Timmy Lin: | [Ticket]()  |
+| Timmy Lin: Put together Deployment wiki and brainwrite | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Deployment)  |
 | Noah Jeng | [Ticket]()  |
 | William Du | [Ticket]()  |
 | Ritvik Keerthi | [Ticket]()  | 
