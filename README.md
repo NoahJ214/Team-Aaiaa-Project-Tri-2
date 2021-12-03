@@ -33,9 +33,8 @@
 | **Task** | **Evidence** |
 | ------------- | ------------- |
 | Nathan: Create and assign tasks on scrumboard | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/98a0e8c07ac85983619d1613e0c8f35af7ea2205)  |
-| Colin: Created turtle clicker | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/93d738aed3ccbcad81041b9f6ad47fc0bd16426b)  |
-| Jackson: Created the navbar for the monkey reaction test and helped create that page | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/3fcb9e4d0bc8cae0e6f2d77a29b9ab3dbacf7a00)  |
-| Everitt: Worked on Monkey Reaction Test | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/e6a7bada6e72b3205a773e502ee5ddfa0c534b6b)  |
-| Kurtis: Changed website icon. | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/292b34a551430b08908d8422a8647a1b038b1418)  | 
-[Key features planned for N@tM](https://docs.google.com/document/d/1rrQ_LRejldWRcKcY2OpWgP84yWiOKypIfexTtAwT5ZM/edit?usp=sharing)
+| Timmy Lin: | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/93d738aed3ccbcad81041b9f6ad47fc0bd16426b)  |
+| Noah Jeng | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/3fcb9e4d0bc8cae0e6f2d77a29b9ab3dbacf7a00)  |
+| William Du | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/e6a7bada6e72b3205a773e502ee5ddfa0c534b6b)  |
+| Ritvik Keerthi | [Ticket](https://github.com/NathanShih04/GamerGroupRepository/commit/292b34a551430b08908d8422a8647a1b038b1418)  | 
 
