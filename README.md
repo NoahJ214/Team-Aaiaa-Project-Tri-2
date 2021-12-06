@@ -1,25 +1,40 @@
-## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
-Runtime link: https://portfolio.nighthawkcodingsociety.com/
-### Idea
-Starter code should be fun and practical.
-### Visual thoughts
-#### Organize with Bootstrap menu 
-#### Add some color and fun through VANTA Visuals (birds, halo, solar, net)
-#### Show some practical and fun links (hrefs) like Twitter, Git, Youtube
-#### Show project specific links (hrefs) per page
+# AP CSP Period 4: Team Aaiaa
+## Project Ideation
+### Overview
 
-### Implementation progress (August 13th, 2021)
-#### Project entry point is main.py, this enables Flask Web App and provides capability to renders templates (HTML files)
-#### The main.py is the  Web Server Gateway Interface, essentially it contains a HTTP route and HTML file relationship.  The Python code constructs WSGI relationships for index, kangaroos, walruses, and hawkers.
-#### The project structure contains many directories and files.  The template directory (containing html files) and static directory (containing js files) are common standards for HTML coding.  Static files can be pictures and videos, in this project they are mostly javascript backgrounds.
-#### WSGI templates: index.html, kangaroos.html, ... are aligned with routes in main.py.
-#### Other templates support WSGI templates.  The base.html template contains common Head, Style, Body, Script definitions.  WSGI templates often "include" or "extend" these templates.  This is a way to reuse code.
-#### The VANTA javascript statics (backgrounds) are shown and defaulted in base.html (birds), but are block replaced as needed in other templates (solar, net, ...)
-#### The Bootstrap Navbar code is in navbar.html. The base.html code includes navbar.html.  The WSGI html files extend base.html files.  This is a process of management and correlation to optimize code management.  For instance, if the menu changes discovery of navbar.html is easy, one change reflects on all WSGI html files. 
-#### Jinja2 variables usage is to isolate data and allow redefinitions of attributes in templates.  Observe "{% set variable = %}" syntax for definition and "{{ variable }}" for reference.
-#### The base.html uses combination of Bootstrap grid styling and custom CSS styling.  Grid styling in observe with the "<Col-3>" markers.  A Bootstrap Grid has a width of 12, thus four "Col-3" markers could fit on a Grid row.
-#### A key purpose of this project is to embed links to other content.  The "href=" definition embeds hyperlinks into the rendered HTML.  The base.html file shows usage of "href={{github}}", the "{{github}}" is a Jinja2 variable.  Jinja2 variables are pre-processed by Python, a variable swap with value, before being sent to the browser.
 
-### IDE management (things that happened beyond plan)
-#### Recall on ".gitignore" solution to the pains of temporary files.  Start a ".gitignore" and avoid promoting temporary files to Git, for instance IDE xml files.
-#### A project needs to establish a "requirements.txt" to keep track of Python packages used by the project.  This help in other IDEs and Deployment.  IntelliJ has menu Tool -> Sync Python Requirements to start file. 
+## [How to Use]
+
+
+## [How to Contribute]
+
+
+## [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1)
+## [Insights with Contributors and Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/graphs/contributors)
+## [Tim, Nat, and Noa Journal](https://docs.google.com/document/d/1UPgaLH_43fjmX9X04RuxzXEYBlq-SOSX3XvEvOp0yCE/edit?usp=sharing)
+## [Ritvik and William Journal](https://docs.google.com/document/d/10kLbZfA-buoykTZGUwkormMoxzioGr417bbY6eDFoos/edit?usp=sharing)
+
+## CONTRIBUTORS
+| **Name** | **Github Profile** | **Assigned Tasks** | **Scrum Board** | **Commits** |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Nathan Shih | [@NathanShih04](https://github.com/NathanShih04) | [Tasks](https://github.com/NathanShih04/GamerGroupRepository/issues/assigned/NathanShih04) | [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1) | [Commits](https://github.com/NathanShih04/GamerGroupRepository/commits?author=NathanShih04) |
+| Timmy Lin | [@TimL1n](https://github.com/TimL1n) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues?q=assignee%3ATimL1n+is%3Aopen) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1?card_filter_query=assignee%3Atiml1n) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=TimL1n) |
+| Noah Jeng | [@NoahJ214](https://github.com/NoahJ214) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/NoahJ214) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=NoahJ214) |
+| William Du | [@WilliamDu22](https://github.com/WilliamDu22) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/WilliamDu22) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=WilliamDu22) |
+| Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/Ritvik-Keerthi) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=Ritvik-Keerthi) |
+
+
+## Time Table 
+
+
+### Week 1 
+
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: Create and assign tasks on scrumboard| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki)  |
+| Timmy Lin: Put together Deployment wiki and brainwrite | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Deployment)  |
+| Noah Jeng: Create management plan to prevent commit and pull issues| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Management-Plan)  |
+| William Du: Create a wire frame idea for the front page of out website. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Wire-Frame)  |
+| Ritvik Keerthi: Made 10 key ideas and begin database work | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/9)  | 
+
