@@ -12,19 +12,27 @@ def index():
 
 
 # connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
-def kangaroos():
-    return render_template("kangaroos.html")
+@app.route('/timmy/')
+def timmy():
+    return render_template("timmy.html")
 
 
-@app.route('/walruses/')
-def walruses():
-    return render_template("walruses.html")
+@app.route('/ritvik/')
+def ritvik():
+    return render_template("ritvik.html")
 
 
-@app.route('/hawkers/')
-def hawkers():
-    return render_template("hawkers.html")
+@app.route('/nathan/')
+def nathan():
+    return render_template("nathan.html")
+
+@app.route('/william/')
+def william():
+    return render_template("william.html")
+
+@app.route('/noah/')
+def noah():
+    return render_template("noah.html")
 
 
 @app.route('/stub/')
