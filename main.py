@@ -22,7 +22,7 @@ def Ritvik():
     return render_template("ritvik.html")
 
 
-@app.route('/nate/')
+@app.route('/nathan/')
 def Nathan():
     return render_template("nathan.html")
 
