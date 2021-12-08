@@ -13,25 +13,25 @@ def index():
 
 # connects /kangaroos path to render kangaroos.html
 @app.route('/timmy/')
-def timmy():
-    return render_template("timmy.html")
+def Timmy():
+    return render_template("templates/timothy.html")
 
 
 @app.route('/ritvik/')
-def ritvik():
+def Ritvik():
     return render_template("ritvik.html")
 
 
 @app.route('/nathan/')
-def nathan():
+def Nathan():
     return render_template("nathan.html")
 
 @app.route('/william/')
-def william():
+def William():
     return render_template("william.html")
 
 @app.route('/noah/')
-def noah():
+def Noah():
     return render_template("noah.html")
 
 

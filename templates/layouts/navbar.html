@@ -1,27 +1,35 @@
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2%22%3EAaiaa</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2">{{name}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a class="nav-link" href="/SQL/">SQL</a>
+            <!--root menu -->
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" type="button">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-link" href="/william/">William</a>
-                    <a class="dropdown-item" href="/ritvik/">Ritvik</a>
-                    <a class="dropdown-item" href="/noah/">Noah</a>
-                    <a class="dropdown-item" href="/timmy/">Timmy</a>
-                    <a class="dropdown-item" href="/nathan/">Nathan</a>
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">About Us</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="/Ritvik/">Ritvik</a>
+                    <a class="dropdown-item" href="/William/">William</a>
+                    <a class="dropdown-item" href="/Noah/">Noah</a>
+                    <a class="dropdown-item" href="/Timmy/">Timmy</a>
+                    <a class="dropdown-item" href="/Nathan/">Nathan</a>
                 </div>
-                </a>
+            </li>
+
         </div>
+    </div>
     </div>
 </nav>
