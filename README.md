@@ -25,7 +25,16 @@
 
 
 ## Time Table 
+### Week 2 
 
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: ReadMe clean up, release day policies, and Scrum Board to week after break | [Ticket]()  |
+| Timmy Lin:  | [Ticket]()  |
+| Noah Jeng:  | [Ticket]()  |
+| William Du:  | [Ticket]()  |
+| Ritvik Keerthi:  | [Ticket]()  | 
 
 ### Week 1 
 
