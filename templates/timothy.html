@@ -1,10 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Cook</title>
-</head>
-<body>
+<!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/project.html" %}
 
-</body>
-</html>
+<!-- Setting up variables to customize "project" details to be specific to kangaroos -->
+{% set project = "Timmy's" %}
+{%  block body %}
+    <script>
+        $( document ).ready(function() {
+            $('#grayscale').hide()
+        })
+    </script>
+
+    <script>
+
+        var imageType = 0;
+
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                if (imageType == 0) {
+                    $('#Masked').hide()
+                    $('#Face').show()
+                } else {
+                    $('#Face').hide()
+                    $('#Masked').show()
+                }
+            });
+        });
+
+    </script>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('/static/assets/backgrounds/jungle 2.jpg'); background-color: #f2cac4;
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <div class="parallax" style="height: 15%">
+
+    </div>
+    <div class="parallax">
+        <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; width: 70%; margin: auto; text-align: center; background-color: rgba(172, 209, 175,0.7); padding: 2%">
+            <div class="Face">
+            <img src="/static/assets/tim 1.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 1">
+            </div>
+            <button class="btn1" style="padding: 1%; margin: 1%"> Mask On/Off </button>
+            <p style="padding: 2%">
+                Hello, my name is Timothy Lin and I am a student of AP Computer Science Principles at Del Norte High School.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="parallax" style="height: 20%">
+
+    </div >
+    <div class="parallax" >
+        <div class="container" style="background-color: rgba(255,255,255,0.7)">
+            <div class="d-flex justify-content-center">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Meta Data</th>
+                        <th>Image</th>
+                        <th>RGB</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            <div>tim 1.jpg</div>
+                            <div>JPEG</div>
+                        </td>
+                        <td>
+
+                            <img src="/static/assets/tim%201.jpg" alt="Greeting" width="270" height="330">
+                        </td>
+                        <td>
+                            <div class="overflow-auto" style="height: 256px">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <div>RGB</div>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                </table>
+                            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block background %}
+    <!-- Birds were here -->
+{% endblock %}
