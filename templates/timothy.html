@@ -1,30 +1,23 @@
-<!-- Extending the project layout, as this file will do minor customizations -->
-{% extends "layouts/project.html" %}
-
 <!-- Setting up variables to customize "project" details to be specific to kangaroos -->
 {% set project = "Timmy's" %}
 {%  block body %}
     <script>
-        $( document ).ready(function() {
-            $('#Masked').hide()
-        })
-    </script>
 
-    <script>
+        window.onload = function m(){
+            document.getElementById("nm").style.display="none";
+            document.getElementById("m").style.display="block";
+        };
 
-        var imageType = 0;
+        function m(){
+            document.getElementById("nm").style.display="none";
+            document.getElementById("m").style.display="block";
+        }
 
-        $(document).ready(function(){
-            $(".btn1").click(function(){
-                if (imageType == 0) {
-                    $('#Masked').hide()
-                    $('#Face').show()
-                } else {
-                    $('#Face').hide()
-                    $('#Masked').show()
-                }
-            });
-        });
+        function nm(){
+            document.getElementById("m").style.display="none";
+            document.getElementById("nm").style.display="block";
+        }
+
 
     </script>
     <style>
@@ -34,7 +27,7 @@
 
         .parallax {
             /* The image used */
-            background-image: url('/static/assets/backgrounds/jungle 2.jpg'); background-color: #f2cac4;
+            background-image: url('https://media.istockphoto.com/photos/basketball-arena-picture-id1201438254?b=1&k=20&m=1201438254&s=170667a&w=0&h=VPaBWsMjl1AmUrBwdGgcV7vzV5u6ATFlLW-b4YFkNcE='); background-color: #f2cac4;
 
             /* Full height */
             height: 100%;
@@ -51,9 +44,21 @@
     </div>
     <div class="parallax">
         <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; width: 70%; margin: auto; text-align: center; background-color: rgba(172, 209, 175,0.7); padding: 2%">
-            <img src="/static/assets/tim 1.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo Face" id="Face">
-            <img src="/static/assets/Tim 2.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo Masked" id="Masked">
-            <button class="btn1" style="padding: 1%; margin: 1%"> Mask On/Off </button>
+
+        <div id="m">
+            <img src="https://lh3.googleusercontent.com/8wSUxLxyFrmF56e2xPUp6-fikFtzt7UT267jm8wlvV9ar19W_k1k8L_dNyVRHzFsmShDu5bCZdKY5GPRiHs6ReSswsHFcFIvOKqhla1T7a1ffwl-Xhr2OE04onTeYS9jPcp92BT_n04dzYfjkqPbIBndWsP7BKMtQy99KMrX_vwALzlU2tsPBJvVdYzy0A3UjQo0vxeI24UL81WiGMP5fFSGsDHseAEr4cUI_FnYi5Kdmcorq9wM1_BagnqkoJxr_Qwhl0_RxrRQ73nS6RaVWeWSN9ClErEA9vFHfjFyzI6JA0FUo9hFT-Y2cXHhLySBVPtvK0dNkgB6jbss-9KzMzCim4-gyQEMso1d4orlyxKzfj8yxh_z4uCS7rdx9OMiNkpYMZJKIdeOJTiWf31i3mMefGAtBxWLbW3vtxhFJ1MKvqBHY2YHbJg8jzN_tQZFSUwBByVMKBUPHhJU_hRm8M5_n5cnvVa8MWCJSrHUYuYpUwCYI83m13RgxvIAHvVxBpnLEvbV2GJoHmGmjv3vq1s_A5_yAdCcbNvc0AEg5fy7O2B5QCbUKAIM_1fNEQMP5RRpHgoxfjN85zTuD9_pd34diRgu_84ePQCKg47vR6QSw419vi0xK24Xu7XFTRaQrPWpmnUAlzleCGrnbfFUNdiL9htqHsd4-b9gPD9PzQH8Umw-Gu89hNAaHkKl9SbJvxRGdEaG5HwL0EtcdJpxKkDX=w973-h1297-no?authuser=0" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 1">
+        </div>
+        <div id="nm">
+            <img src="https://lh3.googleusercontent.com/7DX9Dgx_4KX4kNasLn0IHFTaGAAsSK6J0M4HHmB-EgUDlN2LE8CrozKee56iZLWbLAw274vFRDWqemn3xDDuGGE2XkOIs7vP_FCmnPU9xwRfYSRQ3yzzfGDB_VE27D1sKwinpL4GiSasbz5xVWgr2tWvqFdW0fhKfkVpeS-rFS4TraHbnZ_Oyb3Lg_mqbO2TqcPala9Y-FBCWzR77veu58WIJFs8AdUy3cMnvlWHkt66XpGniXTjzpQ0armYIlNXcO-6XtXNAdjhZOpZORzMXIQ7e7GQ2udTXq92WFWWIVUMsR_u5ypBwmfoUJ40RBJnDBI0TF3LPvBvnJuRYGcaCVkWP0sPIn8g9PQTbxP1tJbpT8mlT7lGXYoexbmpefZcGMI8CiXUjJY6e7WVD82e1Mtcg3woSnqKgP0lwsxwZUianFDcoOMkk46FJlLnM0yWKnrr7cs28quMnVzRxrcrxJeJ_LCk4jqCbQUBWavlEl3aaQ5fZJllGuM8-PdUCI7YuYMcRlKEMfZXZqcY7E7dRsJ5wFrDfIBlNZY5ADcW5PzREipeWQ93OuYmEOMZBbK_mYQtRHwdJTdPxEth41DjqXXyM-aBxTQ5zmuFtqzlL8aFMMQ7FE9i2cV_uDau6YdI0dR7XHbYroMrMIhCjjM5c6Uh_PMslF4i6Kl646rnuDQeeORwpeC_Ub_zyLApDfhLDtPCLjDqnc55qQEFZ7UK_kkO=w973-h1297-no?authuser=0" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 1" id="nm">
+        </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="btn-group" role="group" aria-label="Button Group">
+                    <button class="btn btn-primary"  onclick="m()">Mask</button>
+                    <button class="btn btn-primary"  onclick="nm()">No Mask</button>
+                </div>
+            </div>
+
             <p style="padding: 2%">
                 Hello, my name is Timothy Lin and I am a student of AP Computer Science Principles at Del Norte High School.
             </p>
@@ -65,43 +70,7 @@
     <div class="parallax" style="height: 20%">
 
     </div >
-    <div class="parallax" >
-        <div class="container" style="background-color: rgba(255,255,255,0.7)">
-            <div class="d-flex justify-content-center">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Meta Data</th>
-                        <th>Image</th>
-                        <th>RGB</th>
-                    </tr>
-                    </thead>
-                    <tbody>
 
-                    <tr>
-                        <td>
-                            <div>tim 1.jpg</div>
-                            <div>JPEG</div>
-                        </td>
-                        <td>
-
-                            <img src="/static/assets/tim%201.jpg" alt="Greeting" width="270" height="330">
-                        </td>
-                        <td>
-                            <div class="overflow-auto" style="height: 256px">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <div>RGB</div>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-
-                                </table>
-                            </div>
-            </div>
-        </div>
-    </div>
 {% endblock %}
 {% block background %}
     <!-- Birds were here -->
