@@ -1,110 +1,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        :root{
-            --white: whitesmoke;
-            --black: black;
-            --grey: grey;
-        }
-
-        html, body{
-            margin: 0;
-            height: 100%;
-            animation: fadein 2s;
-            -moz-animation: fadein 2s; /* Firefox */
-            -webkit-animation: fadein 2s; /* Safari and Chrome */
-            -o-animation: fadein 2s; /* Opera */
-            background-color: var(--grey);
-            color: var(--white);
-        }
-
-        .dark-mode {
-            background-color: var(--white);
-            color: var(--black);
-        }
-
-        h1{
-            font-size: 5em;
-        }
-
-        a {
-            color: midnightblue;
-        }
-
-        .fa{
-            font-size: 3em;
-            letter-spacing: 1em;
-            transition: all .2s;
-            color: white;
-        }
-
-        .fa:hover{
-            transform: translateY(10px);
-        }
-
-        .fa-youtube-play:hover{
-            color: #cc0000;
-        }
-
-        .fa-twitter:hover{
-            color: #1da1f2;
-        }
-
-        .fa-github:hover{
-            color: #000000;
-        }
-
-        .btn:link,
-        .btn:visited {
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 15px 40px;
-            display: inline-block;
-            border-radius: 100px;
-            transition: all .2s;
-            position: absolute;
-            color: white;
-            font-size: 2.5em;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2);
-        }
-
-        .btn:active {
-            transform: translateY(-1px);
-            box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-        }
-
-        .row{
-            margin: auto;
-        }
-
-    </style>
-
-    <title>About Ritvik | Aaiaa</title>
-
 </head>
-
-<body>
-{% include "layouts/navbar.html" %}
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Page | Ritvik</title>
-</head>
-<body>
-    <p>YOOOOOO</p>
-</body>
-</html>
-
-
 <style>
     body {
         background-image: url('https://media.istockphoto.com/photos/basketball-arena-picture-id1201438254?b=1&k=20&m=1201438254&s=170667a&w=0&h=VPaBWsMjl1AmUrBwdGgcV7vzV5u6ATFlLW-b4YFkNcE=');
@@ -112,7 +9,87 @@
         background-size: 110%;
     }
 </style>
+{% set project = "Ritvik's" %}
+{% include "layouts/navbar.html" %}
+{%  block body %}
+    <script>
 
+        window.onload = function m(){
+            document.getElementById("nm").style.display="none";
+            document.getElementById("m").style.display="block";
+        };
+
+        function m(){
+            document.getElementById("nm").style.display="none";
+            document.getElementById("m").style.display="block";
+        }
+
+        function nm(){
+            document.getElementById("m").style.display="none";
+            document.getElementById("nm").style.display="block";
+        }
+
+
+    </script>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('https://media.istockphoto.com/photos/basketball-arena-picture-id1201438254?b=1&k=20&m=1201438254&s=170667a&w=0&h=VPaBWsMjl1AmUrBwdGgcV7vzV5u6ATFlLW-b4YFkNcE='); background-color: #f2cac4;
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <div class="parallax" style="height: 15%">
+
+<<<<<<< Updated upstream
+    <title>About Ritvik | Aaiaa</title>
+=======
+    </div>
+    <div class="parallax">
+        <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; width: 70%; margin: auto; text-align: center; background-color: rgba(172, 209, 175,0.7); padding: 2%">
+>>>>>>> Stashed changes
+
+            <div id="m">
+                <img src="/static/assets/ritvik-m.jpg" style="height: 500px; margin:2%" alt="Ritvik Keerthi Mask" id="m">
+            </div>
+            <div id="nm">
+                <img src="/static/assets/pg-13.jpeg" style="height: 500px; margin: 2%" alt="Paul George" id="nm">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="btn-group" role="group" aria-label="Button Group">
+                    <button class="btn btn-primary"  onclick="m()">Mask</button>
+                    <button class="btn btn-primary"  onclick="nm()">Paul George</button>
+                </div>
+            </div>
+
+            <p style="padding: 2%">
+                Hi, I'm Ritvik Keerthi!
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="parallax" style="height: 20%">
+
+    </div >
+
+{% endblock %}
+{% block background %}
+    <!-- Birds were here -->
+{% endblock %}
 
 </html>
 
