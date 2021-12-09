@@ -1,10 +1,11 @@
 # import "packages" from flask
 import json
+from api.web_api import app_api
 from flask import render_template, request, Flask
 
 # create a Flask instance
 app = Flask(__name__)
-
+app.register_blueprint(app_api)
 # connects default URL to render index.html
 @app.route('/')
 def index():
@@ -35,11 +36,11 @@ def William():
 def Noah():
     return render_template("noah.html")
 
-@app.route('/basketball/', methods=['GET', 'POST'])
-def basketball():
-    url = "http://localhost:5000/api/basketball_api"
-    response = requests.request("GET", url)
-    return render_template("ritvik.html")
+# @app.route('/basketball/', methods=['GET', 'POST'])
+# def basketball():
+ #   url = "http://localhost:5000/api/basketball_api"
+ #   response = requests.request("GET", url)
+ #   return render_template("ritvik.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
