@@ -34,7 +34,7 @@
 | Timmy Lin:  | [Ticket]()  |
 | Noah Jeng:  | [Ticket]()  |
 | William Du:  | [Ticket]()  |
-| Ritvik Keerthi: Finished API, Familiarization with SQL database (beginning work) | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/21)  | 
+| Ritvik Keerthi: Finished API, Familiarization with SQL database (beginning work) | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/api/web_api.py)  | 
 
 ### Week 1 
 
