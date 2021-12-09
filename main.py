@@ -20,20 +20,7 @@ def Timmy():
 
 @app.route('/ritvik/', methods=['GET', 'POST'])
 def Ritvik():
-
-    url = "https://sportscore1.p.rapidapi.com/teams"
-
-    querystring = {"page":"1"}
-
-    headers = {
-        'x-rapidapi-host': "sportscore1.p.rapidapi.com",
-        'x-rapidapi-key': "bc9e5f20f9mshfceb3f679afd2b7p1960cdjsn87cb096651ab"
-    }
-
-    response = requests.request("GET", url, headers=headers, params=querystring)
-    # return(response.json())
-    data = json.loads(response.text)
-    return render_template("ritvik.html", output=response.json())
+    return render_template("ritvik.html")
 
 
 
