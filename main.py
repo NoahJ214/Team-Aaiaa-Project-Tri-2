@@ -1,5 +1,7 @@
-from flask import Flask, render_template, request
-from pathlib import Path
+# import "packages" from flask
+import requests
+import json
+from flask import render_template, request, Flask
 
 # create a Flask instance
 app = Flask(__name__)
@@ -16,9 +18,10 @@ def Timmy():
     return render_template("timothy.html")
 
 
-@app.route('/ritvik/')
+@app.route('/ritvik/', methods=['GET', 'POST'])
 def Ritvik():
     return render_template("ritvik.html")
+
 
 
 @app.route('/nathan/')
