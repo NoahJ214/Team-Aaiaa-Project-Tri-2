@@ -9,7 +9,7 @@
 ## [How to Contribute]
 
 
-##[Deployed Website](http://aaiaa.crabdance.com:5000)
+## [Deployed Website](http://aaiaa.crabdance.com:5000)
 
 ## [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1)
 ## [Insights with Contributors and Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/graphs/contributors)
