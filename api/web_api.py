@@ -1,7 +1,6 @@
 import random
 
 from flask import Blueprint, jsonify
-
 app_api = Blueprint('api', __name__,
                    url_prefix='/basketball_api',
                    template_folder='templates',
@@ -45,7 +44,7 @@ nba_list = [
 def _init_nba():
     item_id = 1
     for item in nba_list:
-        nba_data.append({"id": item_id, "nba": item, "Clippers": 0, "LAC": 0})
+        nba_data.append({"id": item_id, "nba": item})
         item_id += 1
 
 
@@ -54,13 +53,6 @@ def nba():
     if len(nba_data) == 0:
         _init_nba()
     return jsonify(random.choice(nba_data))
-
-
-@app_api.route('/nba_y')
-def nba():
-    if len(nba_data) == 0:
-        _init_nba()
-    return jsonify(nba_data)
 
 
 if __name__ == "__main__":
