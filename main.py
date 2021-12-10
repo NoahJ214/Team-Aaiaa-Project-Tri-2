@@ -5,6 +5,7 @@ from api.web_api import app_api
 from api.nfl import nfl_nfl
 from api.tennis import app_tennis
 from api.soccer import app_soccer
+from api.baseball import app_baseball
 from flask import render_template, request, Flask
 from flask import Flask
 # create a Flask instance
@@ -13,6 +14,7 @@ app.register_blueprint(app_api)
 app.register_blueprint(nfl_nfl)
 app.register_blueprint(app_tennis)
 app.register_blueprint(app_soccer)
+app.register_blueprint(app_baseball)
 
 # connects default URL to render index.html
 @app.route('/')
@@ -52,4 +54,4 @@ def Noah():
 
 # runs the application on the development server
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=False)
+    app.run(debug=True)
