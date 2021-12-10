@@ -1,7 +1,7 @@
 import random
 
 from flask import Blueprint, jsonify
-nfl_api = Blueprint('api', __name__,
+nfl_nfl = Blueprint('notapi', __name__,
                    url_prefix='/football_api',
                    template_folder='templates',
                    static_folder='static', static_url_path='static/football_api')
@@ -48,7 +48,7 @@ def _init_nfl():
         item_id += 1
 
 
-@nfl_api.route('/nfl')
+@nfl_nfl.route('/nfl')
 def nfl():
     if len(nfl_data) == 0:
         _init_nfl()

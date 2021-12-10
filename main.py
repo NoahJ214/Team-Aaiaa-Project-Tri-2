@@ -2,14 +2,14 @@
 import json
 
 from api.web_api import app_api
-from api.nfl import nfl_api
+from api.nfl import nfl_nfl
 
 from flask import render_template, request, Flask
 
 # create a Flask instance
 app = Flask(__name__)
 app.register_blueprint(app_api)
-app.register_blueprint(nfl_api)
+app.register_blueprint(nfl_nfl)
 
 # connects default URL to render index.html
 @app.route('/')
