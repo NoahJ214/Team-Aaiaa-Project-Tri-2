@@ -33,7 +33,7 @@
 | Nathan: ReadMe clean up, release day policies, and Scrum Board to week after break | [Ticket]()  |
 | Timmy Lin:  | [Ticket]()  |
 | Noah Jeng:  | [Ticket]()  |
-| William Du:  | [Ticket]()  |
+| William Du: got api working, finsihed read me, worked on nav bar. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/templates/william.html)  | 
 | Ritvik Keerthi: Finished API, Familiarization with SQL database (beginning work) | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/api/web_api.py)  | 
 
 ### Week 1 
