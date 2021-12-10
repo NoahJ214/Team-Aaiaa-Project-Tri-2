@@ -1,6 +1,5 @@
 # import "packages" from flask
 
-from waitress import serve
 # create a Flask instance
 app = Flask(__name__)
 app.register_blueprint(app_api)
@@ -44,5 +43,5 @@ def Noah():
 
 # runs the application on the development server
 if __name__ == "__main__":
-    #app.run(debug=True)
-    serve(app, host='0.0.0.0', port=80)
+    app.run(debug=True)
+
