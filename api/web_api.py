@@ -2,9 +2,9 @@ import random
 
 from flask import Blueprint, jsonify
 app_api = Blueprint('api', __name__,
-                   url_prefix='/basketball_api',
-                   template_folder='templates',
-                   static_folder='static', static_url_path='static/basketball_api')
+                    url_prefix='/basketball_api',
+                    template_folder='templates',
+                    static_folder='static', static_url_path='static/basketball_api')
 
 nba_data = []
 nba_list = [

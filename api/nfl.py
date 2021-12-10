@@ -2,9 +2,9 @@ import random
 
 from flask import Blueprint, jsonify
 nfl_nfl = Blueprint('notapi', __name__,
-                   url_prefix='/football_api',
-                   template_folder='templates',
-                   static_folder='static', static_url_path='static/football_api')
+                    url_prefix='/football_api',
+                    template_folder='templates',
+                    static_folder='static', static_url_path='static/football_api')
 
 nfl_data = []
 nfl_list = [

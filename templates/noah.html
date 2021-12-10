@@ -1,3 +1,4 @@
+
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -84,36 +85,88 @@
 
     </style>
 
-    <title>About William | A1 from Day 0 </title>
+    <title>About Page | Noah </title>
 
 </head>
 
-<body>
+
+{% set project = "Noah's" %}
+{%  block body %}
 {% include "layouts/navbar.html" %}
+<script>
+
+    window.onload = function m(){
+        document.getElementById("nm").style.display="none";
+        document.getElementById("m").style.display="block";
+    };
+
+    function m(){
+        document.getElementById("nm").style.display="none";
+        document.getElementById("m").style.display="block";
+    }
+
+    function nm(){
+        document.getElementById("m").style.display="none";
+        document.getElementById("nm").style.display="block";
+    }
 
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Page | Noah</title>
-</head>
-<body>
-
-</body>
-</html>
-
-
+</script>
 <style>
+    body, html {
+        height: 100%;
+    }
 
-    body {
-        background-image: url('https://media.istockphoto.com/photos/basketball-arena-picture-id1201438254?b=1&k=20&m=1201438254&s=170667a&w=0&h=VPaBWsMjl1AmUrBwdGgcV7vzV5u6ATFlLW-b4YFkNcE=');
+    .parallax {
+        /* The image used */
+        background-image: url('https://media.istockphoto.com/photos/basketball-arena-picture-id1201438254?b=1&k=20&m=1201438254&s=170667a&w=0&h=VPaBWsMjl1AmUrBwdGgcV7vzV5u6ATFlLW-b4YFkNcE='); background-color: #f2cac4;
+
+        /* Full height */
+        height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
         background-repeat: no-repeat;
-        background-size: 110%;
-
+        background-size: cover;
     }
 </style>
+<div class="parallax" style="height: 15%">
+
+</div>
+<div class="parallax">
+    <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; width: 70%; margin: auto; text-align: center; background-color: rgba(172, 209, 175,0.7); padding: 2%">
+
+        <div id="m">
+            <img src="/static/assets/noah-m.jpg" style="height: 500px; margin:2%" alt="Noah Jeng Mask" id="m">
+        </div>
+        <div id="nm">
+            <img src="https://sites.psu.edu/sundarpassion/files/2018/09/proboscis-monkey-1X1-278447l.jpg" style="height: 400px; margin: 2%" alt="Probiscus Monkey" id="nm">
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Button Group">
+                <button class="btn btn-primary"  onclick="m()">Mask</button>
+                <button class="btn btn-primary"  onclick="nm()">Proboscis Monkey</button>
+            </div>
+        </div>
+
+        <p style="padding: 2%">
+            Hello, my name is Noah Jeng. I enjoy computer science and playing soccer.  <br>
+            <a href='https://docs.google.com/document/d/1UPgaLH_43fjmX9X04RuxzXEYBlq-SOSX3XvEvOp0yCE/edit?usp=sharing'><button>Journal</button></a>
+            <a href='https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/graphs/contributors'><button>Team Commits</button></a>
+            <a href='https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Create-Task-Plan'><button>Create Task Plan</button></a>
+        </p>
+
+    </div>
+</div>
 
 
-</html>
+<div class="parallax" style="height: 20%">
+
+</div >
+
+{% endblock %}
+{% block background %}
+<!-- Birds were here -->
+{% endblock %}
