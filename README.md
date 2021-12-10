@@ -30,7 +30,7 @@
 #### Progress
 | **Task** | **Evidence** |
 | ------------- | ------------- |
-| Nathan: ReadMe clean up, release day policies, and Scrum Board to week after break | [Ticket]()  |
+| Nathan: ReadMe clean up, release day policies, and Scrum Board to week after break | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/b17207e519607606350799332a6c5381b0c95bf9)  |
 | Timmy Lin:  | [Ticket]()  |
 | Noah Jeng:  | [Ticket]()  |
 | William Du: got api working, finsihed read me, worked on nav bar. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/templates/william.html)  | 
