@@ -43,6 +43,8 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                         Databases and APIs
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>SQL CRUD</a></li>
+                        <li><a class="dropdown-item" href={{ url_for('crud.search') }}>SQL Search</a></li>
                         <li><a class="dropdown-item" href={{ url_for('api.nba') }}>Basketball Teams API</a></li>
                         <li><a class="dropdown-item" href={{ url_for('notapi.nfl') }}>NFL Teams API</a></li>
                         <li><a class="dropdown-item" href={{ url_for('tennisapi.tennis') }}>Tennis Players API</a></li>
