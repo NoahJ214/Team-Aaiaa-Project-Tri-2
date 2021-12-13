@@ -1,6 +1,7 @@
 # import "packages" from flask
 import json
 
+
 from api.web_api import app_api
 from api.nfl import nfl_nfl
 from api.tennis import app_tennis
@@ -8,7 +9,6 @@ from api.soccer import app_soccer
 from api.baseball import app_baseball
 from crud.app_crud import app_crud
 from flask import render_template, request, Flask
-from flask import Flask
 
 # create a Flask instance
 app = Flask(__name__)
