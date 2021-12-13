@@ -7,7 +7,6 @@ from api.tennis import app_tennis
 from api.soccer import app_soccer
 from api.baseball import app_baseball
 from flask import render_template, request, Flask
-from flask import Flask
 # create a Flask instance
 app = Flask(__name__)
 app.register_blueprint(app_api)
