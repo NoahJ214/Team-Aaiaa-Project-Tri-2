@@ -7,3 +7,4 @@
 /.idea/runConfigurations.xml
 /.idea/Team-Aaiaa-Project-Tri-2.iml
 *.pyc
+.idea/dataSources.xml
