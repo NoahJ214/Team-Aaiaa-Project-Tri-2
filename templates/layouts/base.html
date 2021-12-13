@@ -116,58 +116,7 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
 
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-</head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <!--root menu -->
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <a class="dropdown-item" href="/ritvik/">Ritvik</a>
-                    <a class="dropdown-item" href="/william/">William</a>
-                    <a class="dropdown-item" href="/noah/">Noah</a>
-                    <a class="dropdown-item" href="/timmy/">Timmy</a>
-                    <a class="dropdown-item" href="/nathan/">Nathan</a>
-                </div>
-            </li>
-
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Databases and APIs
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href={{ url_for('api.nba') }}>Basketball Teams API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('notapi.nfl') }}>NFL Teams API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('tennisapi.tennis') }}>Tennis Players API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('soccerapi.soccer') }}>Soccer Teams API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('baseballapi.baseball') }}>Baseball Teams API</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-    </div>
-</nav>
-
+{% include "layouts/navbar.html" %}
 
 <div class="container-fluid">
     <div class="row justify-content-end" style="padding: 2%;">
@@ -216,9 +165,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         </div>
 
     </div>
-</div>
-
-
 </body>
 
 
