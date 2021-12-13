@@ -40,16 +40,11 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Databases and APIs
+                        Database
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>SQL CRUD</a></li>
                         <li><a class="dropdown-item" href={{ url_for('crud.search') }}>SQL Search</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('api.nba') }}>Basketball Teams API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('notapi.nfl') }}>NFL Teams API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('tennisapi.tennis') }}>Tennis Players API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('soccerapi.soccer') }}>Soccer Teams API</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('baseballapi.baseball') }}>Baseball Teams API</a></li>
                     </ul>
                 </li>
             </ul>
