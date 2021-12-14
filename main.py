@@ -4,9 +4,8 @@ import json
 
 from crud.app_crud import app_crud
 from flask import render_template, request, Flask
-
+from __init__ import app
 # create a Flask instance
-app = Flask(__name__)
 app.register_blueprint(app_crud)
 
 # connects default URL to render index.html
