@@ -3,6 +3,8 @@
  Colors and Text: https://getbootstrap.com/docs/5.0/utilities/colors/
  Background: https://getbootstrap.com/docs/5.0/utilities/background/
 
+
+
 Key Colors
 $blue:    #0d6efd;
 $indigo:  #6610f2;
@@ -7707,7 +7709,8 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-secondary {
+.bg-info
+ {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -17469,7 +17472,8 @@ a > .light-mode code {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
-.light-mode .bg-secondary {
+.light-mode .bg-info
+ {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
