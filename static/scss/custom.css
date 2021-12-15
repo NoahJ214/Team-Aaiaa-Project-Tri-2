@@ -101,7 +101,12 @@ $theme-colors: (
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #ffffff;
-  --bs-body-bg: #89CFF0;
+
+
+  background-image: url("https://images.unsplash.com/photo-1533228876829-65c94e7b5025?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFwcGluZXNzfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+
+
+
 
 }
 
