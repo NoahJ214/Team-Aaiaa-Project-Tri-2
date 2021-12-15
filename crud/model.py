@@ -87,15 +87,18 @@ def model_tester():
     print("--------------------------")
     db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby')
-    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko')
-    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex')
-    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit')
-    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty')
-    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty')
+    u1 = Users(name='Novak Djokovic', email='Djokovic@gmail.com', password='aaa')
+    u2 = Users(name='Daniil Medvedev', email='Medvedev@gmail.com', password='bbb')
+    u3 = Users(name='Alexander Zverev', email='Zverev@gmail.com', password='ccc')
+    u4 = Users(name='Stefanos Tsitsipas', email='Tsitsipas@gmail.com', password='ddd')
+    u5 = Users(name='Andrey Rublev', email='Rublev@gmail.com', password='eee')
+    u6 = Users(name='Kevin Durant', email='KDTrey5@gmail.com', password='KD7')
+    u7 = Users(name='Stephen Curry', email='Chef@gmail.com', password='SC30')
+    u8 = Users(name='Kawhi Leonard', email='Klaw@gmail.com', password='kawhileonard')
+    u9 = Users(name='Giannis Antetokounmpo', email='giannis@gmail.com', password='GIANNIS')
+    u10 = Users(name='LeBron James', email='theKing@gmail.com', password='KING')
     # U7 intended to fail as duplicate key
-    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty')
-    table = [u1, u2, u3, u4, u5, u6, u7]
+    table = [u1, u2, u3, u4, u5, u6, u7, u8, u9, u10]
     for row in table:
         try:
             db.session.add(row)
