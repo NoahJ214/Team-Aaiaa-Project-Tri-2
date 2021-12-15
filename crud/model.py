@@ -1,4 +1,5 @@
 """ database dependencies to support Users db examples """
+
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 from flask_migrate import Migrate
@@ -7,15 +8,14 @@ from __init__ import app
 
 # Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into Python shell and follow along
 # Define variable to define type of database (sqlite), and name and location of myDB.db
-dbURI = 'sqlite:///model/myDB.db'
+dbURI = 'sqlite:///model/DB.db'
 # Setup properties for the database
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = dbURI
 app.config['SECRET_KEY'] = 'SECRET_KEY'
 # Create SQLAlchemy engine to support SQLite dialect (sqlite:)
 db = SQLAlchemy(app)
 Migrate(app, db)
-
 
 # Define the Users table within the model
 # -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy
@@ -28,12 +28,14 @@ class Users(db.Model):
     name = db.Column(db.String(255), unique=False, nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
     password = db.Column(db.String(255), unique=False, nullable=False)
+    team = db.Column(db.String(255), unique=False, nullable=False)
 
     # constructor of a User object, initializes of instance variables within object
-    def __init__(self, name, email, password):
+    def __init__(self, name, email, password, team):
         self.name = name
         self.email = email
         self.password = password
+        self.team = team
 
     # CRUD create/add a new record to the table
     # returns self or None on error
@@ -55,18 +57,19 @@ class Users(db.Model):
             "name": self.name,
             "email": self.email,
             "password": self.password,
+            "team": self.team
         }
 
-    # CRUD update: updates users name, password
+    # CRUD update: updates users name, password, team
     # returns self
-    def update(self, name, email, password=""):
+    def update(self, name, password="", team=""):
         """only updates values with length"""
         if len(name) > 0:
             self.name = name
-        if len(email) > 0:
-            self.email = email
         if len(password) > 0:
             self.password = password
+        if len(team) > 0:
+            self.team = team
         db.session.commit()
         return self
 
@@ -85,20 +88,16 @@ def model_tester():
     print("--------------------------")
     print("Seed Data for Table: users")
     print("--------------------------")
-    db.create_all()
     """Tester data for table"""
-    u1 = Users(name='Novak Djokovic', email='Djokovic@gmail.com', password='aaa')
-    u2 = Users(name='Daniil Medvedev', email='Medvedev@gmail.com', password='bbb')
-    u3 = Users(name='Alexander Zverev', email='Zverev@gmail.com', password='ccc')
-    u4 = Users(name='Stefanos Tsitsipas', email='Tsitsipas@gmail.com', password='ddd')
-    u5 = Users(name='Andrey Rublev', email='Rublev@gmail.com', password='eee')
-    u6 = Users(name='Kevin Durant', email='KDTrey5@gmail.com', password='KD7')
-    u7 = Users(name='Stephen Curry', email='Chef@gmail.com', password='SC30')
-    u8 = Users(name='Kawhi Leonard', email='Klaw@gmail.com', password='kawhileonard')
-    u9 = Users(name='Giannis Antetokounmpo', email='giannis@gmail.com', password='GIANNIS')
-    u10 = Users(name='LeBron James', email='theKing@gmail.com', password='KING')
+    u1 = Users(name='Thomas Edison', email='tedison@example.com', password='123toby', team="1111111111")
+    u2 = Users(name='Nicholas Tesla', email='ntesla@example.com', password='123niko', team="1111112222")
+    u3 = Users(name='Alexander Graham Bell', email='agbell@example.com', password='123lex', team="1111113333")
+    u4 = Users(name='Eli Whitney', email='eliw@example.com', password='123whit', team="1111114444")
+    u5 = Users(name='John Mortensen', email='jmort1021@gmail.com', password='123qwerty', team="8587754956")
+    u6 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', team="8587754956")
     # U7 intended to fail as duplicate key
-    table = [u1, u2, u3, u4, u5, u6, u7, u8, u9, u10]
+    u7 = Users(name='John Mortensen', email='jmort1021@yahoo.com', password='123qwerty', team="8586791294")
+    table = [u1, u2, u3, u4, u5, u6, u7]
     for row in table:
         try:
             db.session.add(row)
@@ -112,6 +111,7 @@ def model_printer():
     print("------------")
     print("Table: users with SQL query")
     print("------------")
+    db.create_all()
     result = db.session.execute('select * from users')
     print(result.keys())
     for row in result:
@@ -119,5 +119,5 @@ def model_printer():
 
 
 if __name__ == "__main__":
-    model_tester()  # builds model of Users
+    model_tester()
     model_printer()

@@ -69,6 +69,7 @@ def create():
             request.form.get("name"),
             request.form.get("email"),
             request.form.get("password"),
+            request.form.get("team")
         )
         po.create()
     return redirect(url_for('crud.crud'))
@@ -135,8 +136,8 @@ def search_term():
 class UsersAPI:
     # class for create/post
     class _Create(Resource):
-        def post(self, name, email, password):
-            po = Users(name, email, password)
+        def post(self, name, email, password, team):
+            po = Users(name, email, password, team)
             person = po.create()
             if person:
                 return person.read()
@@ -162,11 +163,11 @@ class UsersAPI:
             return po.read()
 
     class _UpdateAll(Resource):
-        def put(self, email, name, password):
+        def put(self, email, name, password, team):
             po = user_by_email(email)
             if po is None:
                 return {'message': f"{email} is not found"}, 210
-            po.update(name, password)
+            po.update(name, password, team)
             return po.read()
 
     # class for delete
@@ -180,11 +181,11 @@ class UsersAPI:
             return data
 
     # building RESTapi resource
-    api.add_resource(_Create, '/create/<string:name>/<string:email>/<string:password>/')
+    api.add_resource(_Create, '/create/<string:name>/<string:email>/<string:password>/<string:team>')
     api.add_resource(_Read, '/read/')
     api.add_resource(_ReadILike, '/read/ilike/<string:term>')
     api.add_resource(_Update, '/update/<string:email>/<string:name>')
-    api.add_resource(_UpdateAll, '/update/<string:email>/<string:name>/<string:password>/')
+    api.add_resource(_UpdateAll, '/update/<string:email>/<string:name>/<string:password>/<string:team>')
     api.add_resource(_Delete, '/delete/<int:userid>')
 
 

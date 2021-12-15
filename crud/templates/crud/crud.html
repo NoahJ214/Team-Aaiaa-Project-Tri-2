@@ -6,7 +6,6 @@
 <!-- CONTENT (in <head>), content for this page -->
 {% block meta %}
 <title>CRUD page</title>
-
     <link rel="stylesheet" type="text/css" href=/static/scss/custom.css?version=204>
 
 <!-- Password verification and error message -->
@@ -85,6 +84,7 @@
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Password</th>
+                                <th>Team</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -99,6 +99,7 @@
                                     <td>{{ row['name'] }}</td>
                                     <td>{{ row['email'] }}</td>
                                     <td>{{ row['password'] }}</td>
+                                    <td>{{ row['team'] }}</td>
                                 </tr>
                             {% endfor %}
                             </tbody>
@@ -120,6 +121,7 @@
                             <th><label for="name">Name</label></th>
                             <th><label for="email">Email</label></th>
                             <th><label for="password">Password</label></th>
+                            <th><label for="team">Team</label></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -127,6 +129,7 @@
                             <td><input type="text" name="name" id="name" required></td>
                             <td><input type="email" name="email" id="email" placeholder="abc@xyz.org" required></td>
                             <td><input type="password" name="password" id="password" required></td>
+                            <td><input type="text" name="team" id="team" placeholder="LA Clippers" required></td>
                             <td><input type="submit" value="Create"></td>
                         </tr>
                         </tbody>
