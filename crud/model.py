@@ -1,5 +1,4 @@
 """ database dependencies to support Users db examples """
-
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
 from flask_migrate import Migrate
