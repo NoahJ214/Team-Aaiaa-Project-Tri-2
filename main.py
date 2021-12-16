@@ -38,6 +38,9 @@ def William():
 def Noah():
     return render_template("noah.html")
 
+@app.route('/ballquiz')
+def basketballquiz():
+    return render_template("basketballquiz.html")
 # @app.route('/basketball/', methods=['GET', 'POST'])
 # def basketball():
 #   url = "http://localhost:5000/api/basketball_api"
