@@ -1,12 +1,4 @@
 # AP CSP Period 4: Team Aaiaa
-## Project Ideation
-### Overview
-
-
-## [How to Use]
-
-
-## [How to Contribute]
 
 
 ## [Deployed Website](http://aaiaa.crabdance.com:5000)
@@ -26,7 +18,20 @@
 | Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/Ritvik-Keerthi) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=Ritvik-Keerthi) |
 
 
-## Time Table 
+## TIME TABLE
+
+### Week 3 
+
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki. Show expected backlog when returning from Winter Break | [Ticket]()  |
+| Timmy Lin:  | [Ticket]()  |
+| Noah Jeng:  | [Ticket]()  |
+| William Du:  | [Ticket]()  | 
+| Ritvik Keerthi:  | [Ticket]()  | 
+
+
 ### Week 2 
 
 #### Progress
@@ -49,3 +54,13 @@
 | William Du: Create a wire frame idea for the front page of out website. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Wire-Frame)  |
 | Ritvik Keerthi: Made 10 key ideas and begin database work | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/9)  | 
 
+### Week _
+
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan:  | [Ticket]()  |
+| Timmy Lin:  | [Ticket]()  |
+| Noah Jeng:  | [Ticket]()  |
+| William Du:  | [Ticket]()  | 
+| Ritvik Keerthi:  | [Ticket]()  | 
