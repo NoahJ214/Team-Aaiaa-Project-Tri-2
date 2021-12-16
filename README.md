@@ -18,7 +18,7 @@
 | Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/Ritvik-Keerthi) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=Ritvik-Keerthi) |
 
 
-## Time Table 
+## TIME TABLE
 
 ### Week 3 
 
