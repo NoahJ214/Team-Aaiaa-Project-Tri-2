@@ -41,6 +41,14 @@ def Noah():
 @app.route('/ballquiz')
 def basketballquiz():
     return render_template("basketballquiz.html")
+
+@app.route('/ballgame')
+def basketballgame():
+    return render_template("basketballgame.html")
+
+@app.route('/jeopardy')
+def jeopardy():
+    return render_template("jeopardy.html")
 # @app.route('/basketball/', methods=['GET', 'POST'])
 # def basketball():
 #   url = "http://localhost:5000/api/basketball_api"
