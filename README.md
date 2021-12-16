@@ -31,6 +31,12 @@
 | William Du: show bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/static/scss/custom.css)  | 
 | Ritvik Keerthi: Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations), and started basketball quiz | [Ticket]()  | 
 
+#### PBL Highlights
+| **Highlights** | **Evidence** |
+| ------------- | ------------- |
+| Basketball Quiz:  | [Ticket](http://aaiaa.crabdance.com:5000/ballquiz)  |
+| Basketball Game:  | [Ticket](http://aaiaa.crabdance.com:5000/ballgame)  |
+| Sports Jeopardy:  | [Ticket](http://aaiaa.crabdance.com:5000/jeopardy)  |
 
 ### Week 2 
 
