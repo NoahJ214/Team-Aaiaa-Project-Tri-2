@@ -29,7 +29,7 @@
 | Timmy Lin: Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. | [Ticket]()  |
 | Noah Jeng: GitHub admin highlighting issue, commits, and pull requests completed by each individual. | [Ticket]()  |
 | William Du: show bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | [Ticket]()  | 
-| Ritvik Keerthi: Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations). | [Ticket]()  | 
+| Ritvik Keerthi: Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations), and started basketball quiz | [Ticket]()  | 
 
 
 ### Week 2 
