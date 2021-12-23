@@ -27,10 +27,16 @@
 | ------------- | ------------- |
 | Nathan: overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki. Show expected backlog when returning from Winter Break. Work on PBL game and jeopardy | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/4d1441f7a01442de2876eee7172da1496b322a52)  |
 | Timmy Lin: Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. | [Ticket]()  |
-| Noah Jeng: GitHub admin highlighting issue, commits, and pull requests completed by each individual. | [Ticket]()  |
-| William Du: show bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | [Ticket]()  | 
+| Noah Jeng: GitHub admin highlighting issue, commits, and pull requests completed by each individual. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits/main)  |
+| William Du: show bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/static/scss/custom.css)  | 
 | Ritvik Keerthi: Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations), and started basketball quiz | [Ticket]()  | 
 
+#### PBL Highlights
+| **Highlights** | **Evidence** |
+| ------------- | ------------- |
+| Basketball Quiz:  | [Ticket](http://aaiaa.crabdance.com:5000/ballquiz)  |
+| Basketball Game:  | [Ticket](http://aaiaa.crabdance.com:5000/ballgame)  |
+| Sports Jeopardy:  | [Ticket](http://aaiaa.crabdance.com:5000/jeopardy)  |
 
 ### Week 2 
 
