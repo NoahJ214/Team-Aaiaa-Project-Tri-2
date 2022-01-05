@@ -2,7 +2,7 @@
 <body onload="NextQuestion(0)">
 <main>
     <head>
-        <style>*{
+        <style>{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -36,7 +36,7 @@
         .game-quiz-container{
             width: 40rem;
             height: 30rem;
-            background-color: red;
+            background-color: #008ae7;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -62,7 +62,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px solid darkgray;
+            border: 2px solid silver;
             border-radius: 25px;
         }
 
@@ -84,7 +84,7 @@
         .game-options-container span{
             width: 45%;
             height: 3rem;
-            border: 2px solid darkgray;
+            border: 2px solid darkorange;
             border-radius: 20px;
             overflow: hidden;
         }
@@ -97,14 +97,14 @@
             cursor: pointer;
             transition: transform 0.3s;
             font-weight: 600;
-            color: rgb(22, 22, 22);
+            color: white;
         }
 
         span label:hover{
             -ms-transform: scale(1.12);
             -webkit-transform: scale(1.12);
             transform: scale(1.12);
-            color: white;
+            color: gold;
         }
 
         input[type="radio"] {
