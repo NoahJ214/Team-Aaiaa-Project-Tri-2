@@ -32,8 +32,8 @@
     <div class="game-quiz-container">
 
         <div class="game-details-container">
-            <h1>Points : <span id="current-score"></span> / 20</h1>
-            <h1> Question # : <span id="QNum"></span> / 20</h1>
+            <h1>Points : <span id="current-score"></span> / 10</h1>
+            <h1> Question # : <span id="QNum"></span> / 10</h1>
         </div>
 
         <div class="game-question-container">
@@ -56,25 +56,25 @@
             </div>
 
             <span>
-                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <input type="radio" id="option-one" name="option" class="radio" value="A" />
                     <label for="option-one" class="option" id="option-uno"></label>
                 </span>
 
 
             <span>
-                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <input type="radio" id="option-two" name="option" class="radio" value="B" />
                     <label for="option-two" class="option" id="option-dos"></label>
                 </span>
 
 
             <span>
-                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <input type="radio" id="option-three" name="option" class="radio" value="C" />
                     <label for="option-three" class="option" id="option-tres"></label>
                 </span>
 
 
             <span>
-                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <input type="radio" id="option-four" name="option" class="radio" value="D" />
                     <label for="option-four" class="option" id="option-cuatro"></label>
                 </span>
 
@@ -90,228 +90,120 @@
         const questions = [
             {
                 question: "How many NBA championships have the Lakers won?",
-                optionA: "17 chips",
-                optionB: "7 chips",
-                optionC: "25 chips",
-                optionD: "33 chips",
-                correctOption: "optionA"
+                A: "17 chips",
+                B: "7 chips",
+                C: "25 chips",
+                D: "33 chips",
+                Answer: "A"
             },
 
             {
                 question: "How many seasons has Tom Brady played in the NFL?",
-                optionA: "10 seasons",
-                optionB: "20 seasons",
-                optionC: "17 seasons",
-                optionD: "19 seasons",
-                correctOption: "optionB"
+                A: "10 seasons",
+                B: "20 seasons",
+                C: "17 seasons",
+                D: "19 seasons",
+                Answer: "B"
             },
 
             {
                 question: "Who has the fastest serve in Tennis?",
-                optionA: "Nathan Shih",
-                optionB: "Rafael Nadal",
-                optionC: "Roger Federer",
-                optionD: "Sam Groth",
-                correctOption: "optionD"
+                A: "Nathan Shih",
+                B: "Rafael Nadal",
+                C: "Roger Federer",
+                D: "Sam Groth",
+                Answer: "D"
             },
 
             {
                 question: "Who is the best Golf player below?",
-                optionA: "Tyreek Hill",
-                optionB: "Tiger Woods",
-                optionC: "Jeremy Lin",
-                optionD: "Fernando Tatis Jr",
-                correctOption: "optionB"
+                A: "Tyreek Hill",
+                B: "Tiger Woods",
+                C: "Jeremy Lin",
+                D: "Fernando Tatis Jr",
+                Answer: "B"
             },
 
             {
                 question: "How long is an NBA game, without overtimes?",
-                optionA: "49 minutes",
-                optionB: "47 minutes",
-                optionC: "50 minutes",
-                optionD: "48 minutes",
-                correctOption: "optionD"
+                A: "49 minutes",
+                B: "47 minutes",
+                C: "50 minutes",
+                D: "48 minutes",
+                Answer: "D"
             },
 
             {
                 question: "How many people watched the Super Bowl last year {2021}?",
-                optionA: "67 million",
-                optionB: "252 million",
-                optionC: "96 million",
-                optionD: "87 million",
-                correctOption: "optionC"
+                A: "67 million",
+                B: "252 million",
+                C: "96 million",
+                D: "87 million",
+                Answer: "C"
             },
 
             {
-                question: "_____ is the hottest Continent on Earth ?",
-                optionA: "Oceania",
-                optionB: "Antarctica",
-                optionC: "Africa",
-                optionD: "North America",
-                correctOption: "optionC"
+                question: "Which team finished at the top of the NFC in the 2021-2022 season?",
+                A: "Arizona Cardinals",
+                B: "Dallas Cowboys",
+                C: "Green Bay Packers",
+                D: "Brooklyn Nets",
+                Answer: "C"
             },
 
             {
-                question: "Which country is the largest in the world ?",
-                optionA: "Russia",
-                optionB: "Canada",
-                optionC: "Africa",
-                optionD: "Egypt",
-                correctOption: "optionA"
+                question: "How many points is a field goal worth in American football?",
+                A: "3",
+                B: "4",
+                C: "1",
+                D: "67",
+                Answer: "A"
             },
 
             {
-                question: "Which of these numbers is an odd number ?",
-                optionA: "Ten",
-                optionB: "Twelve",
-                optionC: "Eight",
-                optionD: "Eleven",
-                correctOption: "optionD"
+                question: "In American football, how many minutes is a quarter?",
+                A: "16",
+                B: "23",
+                C: "7",
+                D: "15",
+                Answer: "D"
             },
 
             {
-                question: `"You Can't see me" is a popular saying by`,
-                optionA: "Eminem",
-                optionB: "Bill Gates",
-                optionC: "Chris Brown",
-                optionD: "John Cena",
-                correctOption: "optionD"
+                question: "How many basketball teams are there in the NBA?",
+                A: "23",
+                B: "32",
+                C: "31",
+                D: "30",
+                Answer: "D"
             },
 
             {
-                question: "Where is the world tallest building located ?",
-                optionA: "Africa",
-                optionB: "California",
-                optionC: "Dubai",
-                optionD: "Italy",
-                correctOption: "optionC"
-            },
-
-            {
-                question: "The longest river in the United Kingdom is ?",
-                optionA: "River Severn",
-                optionB: "River Mersey",
-                optionC: "River Trent",
-                optionD: "River Tweed",
-                correctOption: "optionA"
+                question: "Where are the Knicks located?",
+                A: "New York",
+                B: "California",
+                C: "New Jersey",
+                D: "Los Angeles",
+                Answer: "A"
             },
 
 
             {
-                question: "How many permanent teeth does a dog have ?",
-                optionA: "38",
-                optionB: "42",
-                optionC: "40",
-                optionD: "36",
-                correctOption: "optionB"
+                question: "Who was the NBA MVP in 2020?",
+                A: "Giannis Antetokounmpo",
+                B: "LeBron James",
+                C: "Kevin Durant",
+                D: "Kyrie Irving",
+                Answer: "A"
             },
 
             {
-                question: "Which national team won the football World cup in 2018 ?",
-                optionA: "England",
-                optionB: "Brazil",
-                optionC: "Germany",
-                optionD: "France",
-                correctOption: "optionD"
-            },
-
-            {
-                question: "Which US state was Donald Trump Born ?",
-                optionA: "New York",
-                optionB: "California",
-                optionC: "New Jersey",
-                optionD: "Los Angeles",
-                correctOption: "optionA"
-            },
-
-            {
-                question: "How man states does Nigeria have ?",
-                optionA: "24",
-                optionB: "30",
-                optionC: "36",
-                optionD: "37",
-                correctOption: "optionC"
-            },
-
-            {
-                question: "____ is the capital of Nigeria ?",
-                optionA: "Abuja",
-                optionB: "Lagos",
-                optionC: "Calabar",
-                optionD: "Kano",
-                correctOption: "optionA"
-            },
-
-            {
-                question: "Los Angeles is also known as ?",
-                optionA: "Angels City",
-                optionB: "Shining city",
-                optionC: "City of Angels",
-                optionD: "Lost Angels",
-                correctOption: "optionC"
-            },
-
-            {
-                question: "What is the capital of Germany ?",
-                optionA: "Georgia",
-                optionB: "Missouri",
-                optionC: "Oklahoma",
-                optionD: "Berlin",
-                correctOption: "optionD"
-            },
-
-            {
-                question: "How many sides does an hexagon have ?",
-                optionA: "Six",
-                optionB: "Sevene",
-                optionC: "Four",
-                optionD: "Five",
-                correctOption: "optionA"
-            },
-
-            {
-                question: "How many planets are currently in the solar system ?",
-                optionA: "Eleven",
-                optionB: "Seven",
-                optionC: "Nine",
-                optionD: "Eight",
-                correctOption: "optionD"
-            },
-
-            {
-                question: "Which Planet is the hottest ?",
-                optionA: "Jupitar",
-                optionB: "Mercury",
-                optionC: "Earth",
-                optionD: "Venus",
-                correctOption: "optionB"
-            },
-
-            {
-                question: "where is the smallest bone in human body located?",
-                optionA: "Toes",
-                optionB: "Ears",
-                optionC: "Fingers",
-                optionD: "Nose",
-                correctOption: "optionB"
-            },
-
-            {
-                question: "How many hearts does an Octopus have ?",
-                optionA: "One",
-                optionB: "Two",
-                optionC: "Three",
-                optionD: "Four",
-                correctOption: "optionC"
-            },
-
-            {
-                question: "How many teeth does an adult human have ?",
-                optionA: "28",
-                optionB: "30",
-                optionC: "32",
-                optionD: "36",
-                correctOption: "optionC"
+                question: "Which of the following is a tennis player?",
+                A: "Roger Federer",
+                B: "LeBron James",
+                C: "Leonard Fournette",
+                D: "Tom Brady",
+                Answer: "A"
             }
 
         ]
@@ -344,24 +236,24 @@
             document.getElementById("QNum").innerHTML = questionNumber
             document.getElementById("current-score").innerHTML = playerScore
             document.getElementById("display-question").innerHTML = currentQuestion.question;
-            document.getElementById("option-uno").innerHTML = currentQuestion.optionA;
-            document.getElementById("option-dos").innerHTML = currentQuestion.optionB;
-            document.getElementById("option-tres").innerHTML = currentQuestion.optionC;
-            document.getElementById("option-cuatro").innerHTML = currentQuestion.optionD;
+            document.getElementById("option-uno").innerHTML = currentQuestion.A;
+            document.getElementById("option-dos").innerHTML = currentQuestion.B;
+            document.getElementById("option-tres").innerHTML = currentQuestion.C;
+            document.getElementById("option-cuatro").innerHTML = currentQuestion.D;
 
         }
 
 
         function checkForAnswer() {
             const currentQuestion = shuffledQ[indexNumber] //gets current Question
-            const currentQuestionAnswer = currentQuestion.correctOption //gets current Question's answer
+            const currentQuestionAnswer = currentQuestion.Answer //gets current Question's answer
             const options = document.getElementsByName("option"); //gets all elements in dom with name of 'option' (in this the radio inputs)
-            let correctOption = null
+            let Answer = null
 
             options.forEach((option) => {
                 if (option.value === currentQuestionAnswer) {
                     //get's correct's radio input with correct answer
-                    correctOption = option.labels[0].id
+                    Answer = option.labels[0].id
                 }
             })
 
@@ -373,7 +265,7 @@
             //checking if checked radio button is same as answer
             options.forEach((option) => {
                 if (option.checked === true && option.value === currentQuestionAnswer) {
-                    document.getElementById(correctOption).style.backgroundColor = "green"
+                    document.getElementById(Answer).style.backgroundColor = "green"
                     playerScore++ //adding to player's score
                     indexNumber++ //adding 1 to index so has to display next question..
                     //set to delay question number till when next question loads
@@ -385,7 +277,7 @@
                 else if (option.checked && option.value !== currentQuestionAnswer) {
                     const wrongLabelId = option.labels[0].id
                     document.getElementById(wrongLabelId).style.backgroundColor = "red"
-                    document.getElementById(correctOption).style.backgroundColor = "green"
+                    document.getElementById(Answer).style.backgroundColor = "green"
                     wrongAttempt++ //adds 1 to wrong attempts
                     indexNumber++
                     //set to delay question number till when next question loads
@@ -411,12 +303,12 @@
                 else {
                     handleEndGame()//ends game if index number greater than 9 meaning we're already at the 10th question
                 }
-                resetOptionBackground()
+                resetBackground()
             }, 1000);
         }
 
         //sets options background back to null after display the right/wrong colors
-        function resetOptionBackground() {
+        function resetBackground() {
             const options = document.getElementsByName("option");
             options.forEach((option) => {
                 document.getElementById(option.labels[0].id).style.backgroundColor = ""
