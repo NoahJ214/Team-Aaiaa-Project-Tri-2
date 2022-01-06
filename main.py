@@ -38,6 +38,22 @@ def William():
 def Noah():
     return render_template("noah.html")
 
+@app.route('/basketball/')
+def basketball():
+    return render_template("basketball.html")
+
+@app.route('/soccer/')
+def soccer():
+    return render_template("soccer.html")
+
+@app.route('/baseball/')
+def baseball():
+    return render_template("baseball.html")
+
+@app.route('/tennis/')
+def tennis():
+    return render_template("tennis.html")
+
 @app.route('/ballquiz')
 def basketballquiz():
     return render_template("basketballquiz.html")
