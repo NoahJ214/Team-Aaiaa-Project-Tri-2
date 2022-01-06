@@ -8,7 +8,7 @@ from __init__ import app
 # create a Flask instance
 app.register_blueprint(app_crud)
 
-# connects default URL to render index.html
+# connects default URL to render sportsstore.html
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -61,6 +61,31 @@ def basketballquiz():
 @app.route('/ballgame')
 def basketballgame():
     return render_template("basketballgame.html")
+
+@app.route('/sportsstore')
+def sportsstore():
+    return render_template("sportsstore.html")
+
+@app.route('/cart')
+def cart():
+    return render_template("cart.html")
+
+@app.route('/products')
+def products():
+    return render_template("products.html")
+
+@app.route('/checkout')
+def checkout():
+    return render_template("checkout.html")
+
+@app.route('/store')
+def store():
+    return render_template("store.html")
+
+@app.route('/index2')
+def index2():
+    return render_template("index2.html")
+
 
 @app.route('/jeopardy')
 def jeopardy():

@@ -77,7 +77,7 @@
             "Football", "Soccer", "Tennis", "Basketball"
         ],
         pollCount:20,
-        answersWeight:[2, 2, 2, 2],
+        answersWeight:[4, 4, 2, 10],
         selectedAnswer:-1
     };
 
@@ -127,4 +127,20 @@
         }
     }
 </script>
+
+
+<div>
+    <button type="randomSport" onclick="randomSport()">Let the robot choose the best sport from a database: </button>
+    <input name="randomSport" id="randomSport">
+</div>
+
+<script>
+    var sports = Array("Football", "Soccer", "Tennis", "Basketball");
+
+    function randomSport() {
+        var randomSport = sports[Math.floor(Math.random() * sports.length)];
+        document.getElementById('randomSport').value = randomSport;
+    }
+</script>
+
 </html>
