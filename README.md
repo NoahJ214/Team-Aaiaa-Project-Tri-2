@@ -20,6 +20,18 @@
 
 ## TIME TABLE
 
+### Week 4
+
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket]()  |
+| Timmy Lin:  | [Ticket]()  |
+| Noah Jeng:  | [Ticket]()  |
+| William Du:  | [Ticket]()  | 
+| Ritvik Keerthi:  | [Ticket]()  | 
+
+
 ### Week 3 
 
 #### Progress
