@@ -42,9 +42,9 @@ def Noah():
 def basketball():
     return render_template("basketball.html")
 
-@app.route('/soccer/')
-def soccer():
-    return render_template("soccer.html")
+@app.route('/football/')
+def football():
+    return render_template("football.html")
 
 @app.route('/baseball/')
 def baseball():
