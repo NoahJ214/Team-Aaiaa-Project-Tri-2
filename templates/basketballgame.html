@@ -1,99 +1,130 @@
 {% include "layouts/layout.html" %}
 <!DOCTYPE html>
-<html lang="en">
+<div class="poll">
+    <div class="question"></div>
+    <div class="answers"></div>
+</div>
+<style>
+    * {
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
+    }
+    body {
+        font-family:"Raleway",sans-serif;
+        background:#f0f5ff;
+    }
+    .poll {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:100%;
+        max-width:400px;
+        background:#fff;
+        border-radius:10px;
+        box-shadow:0px 0px 20px 5px rgba(35,30,128,0.05);
+    }
+    .poll .question {
+        padding:20px;
+        color:#111;
+        font-size:18px;
+        border-bottom:1px solid #eee;
+    }
+    .poll .answers {
+        padding:20px 20px 10px;
+    }
+    .poll .answers .answer {
+        position:relative;
+        width:100%;
+        height:40px;
+        padding:0px 10px;
+        line-height:40px;
+        color:#111;
+        margin-bottom:10px;
+        border:1px solid #d4d4d4;
+        border-radius:10px;
+        cursor:pointer;
+        overflow:hidden;
+    }
+    .poll .answers .answer.selected {
+        border:2px solid #8f9fe8;
+    }
+    .poll .answers .answer span.percentage-value {
+        position:absolute;
+        top:50%;
+        right:0px;
+        width:40px;
+        transform:translateY(-50%);
+        color:#111;
+        font-size:15px;
+    }
+    .poll .answers .answer span.percentage-bar {
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:0%;
+        height:100%;
+        background:#ccd8f1;
+        z-index:-1;
+        transition:width 300ms ease-in-out;
+    }
+</style>
 <script>
-    const options = document.querySelectorAll("label");
-    for (let i = 0; i < options.length; i++) {
-        options[i].addEventListener("click", ()=>{
-            for (let j = 0; j < options.length; j++) {
-                if(options[j].classList.contains("selected")){
-                    options[j].classList.remove("selected");
-                }
+    let poll = {
+        question:"What is the best sport?",
+        answers:[
+            "Football", "Soccer", "Tennis", "Basketball"
+        ],
+        pollCount:20,
+        answersWeight:[2, 2, 2, 2],
+        selectedAnswer:-1
+    };
+
+    let pollDOM = {
+        question:document.querySelector(".poll .question"),
+        answers:document.querySelector(".poll .answers")
+    };
+
+    pollDOM.question.innerText = poll.question;
+    pollDOM.answers.innerHTML = poll.answers.map(function(answer,i){
+        return (
+            `
+      <div class="answer" onclick="markAnswer('${i}')">
+        ${answer}
+        <span class="percentage-bar"></span>
+        <span class="percentage-value"></span>
+      </div>
+    `
+        );
+    }).join("");
+
+    function markAnswer(i){
+        poll.selectedAnswer = +i;
+        try {
+            document.querySelector(".poll .answers .answer.selected").classList.remove("selected");
+        } catch(msg){}
+        document.querySelectorAll(".poll .answers .answer")[+i].classList.add("selected");
+        showResults();
+    }
+
+    function showResults(){
+        let answers = document.querySelectorAll(".poll .answers .answer");
+        for(let i=0;i<answers.length;i++){
+            let percentage = 0;
+            if(i == poll.selectedAnswer){
+                percentage = Math.round(
+                    (poll.answersWeight[i]+1) * 100 / (poll.pollCount+1)
+                );
+            } else {
+                percentage = Math.round(
+                    (poll.answersWeight[i]) * 100 / (poll.pollCount+1)
+                );
             }
-            options[i].classList.add("selected");
-            for (let k = 0; k < options.length; k++) {
-                options[k].classList.add("selectall");
-            }
-            let forVal = options[i].getAttribute("for");
-            let selectInput = document.querySelector("#"+forVal);
-            let getAtt = selectInput.getAttribute("type");
-            if(getAtt == "checkbox"){
-                selectInput.setAttribute("type", "radio");
-            }else if(selectInput.checked == true){
-                options[i].classList.remove("selected");
-                selectInput.setAttribute("type", "checkbox");
-            }
-            let array = [];
-            for (let l = 0; l < options.length; l++) {
-                if(options[l].classList.contains("selected")){
-                    array.push(l);
-                }
-            }
-            if(array.length == 0){
-                for (let m = 0; m < options.length; m++) {
-                    options[m].removeAttribute("class");
-                }
-            }
-        });
+
+            answers[i].querySelector(".percentage-bar").style.width = percentage + "%";
+            answers[i].querySelector(".percentage-value").innerText = percentage + "%";
+        }
     }
 </script>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basketball Poll</title>
-    <link rel="stylesheet" href="static/scss/poll.css">
-
-</head>*
-<body>
-<div class="wrapper">
-    <header>Goat of basketball?</header>
-    <div class="poll-area">
-        <input type="checkbox" name="poll" id="opt-1">
-        <input type="checkbox" name="poll" id="opt-2">
-        <input type="checkbox" name="poll" id="opt-3">
-        <input type="checkbox" name="poll" id="opt-4">
-        <label for="opt-1" class="opt-1">
-            <div class="row">
-                <div class="column">
-                    <span class="circle"></span>
-                    <span class="text">Giannis Antetokounmpo</span>
-                </div>
-                <span class="percent">30%</span>
-            </div>
-            <div class="progress" style='--w:30;'></div>
-        </label>
-        <label for="opt-2" class="opt-2">
-            <div class="row">
-                <div class="column">
-                    <span class="circle"></span>
-                    <span class="text">LeBron James</span>
-                </div>
-                <span class="percent">20%</span>
-            </div>
-            <div class="progress" style='--w:20;'></div>
-        </label>
-        <label for="opt-3" class="opt-3">
-            <div class="row">
-                <div class="column">
-                    <span class="circle"></span>
-                    <span class="text">Michael Jordan</span>
-                </div>
-                <span class="percent">40%</span>
-            </div>
-            <div class="progress" style='--w:40;'></div>
-        </label>
-        <label for="opt-4" class="opt-4">
-            <div class="row">
-                <div class="column">
-                    <span class="circle"></span>
-                    <span class="text">Kobe Bryant</span>
-                </div>
-                <span class="percent">10%</span>
-            </div>
-            <div class="progress" style='--w:10;'></div>
-        </label>
-    </div>
-</div>
-
-</body>
 </html>
