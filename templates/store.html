@@ -1,0 +1,96 @@
+{% include "layouts/layout.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Aaiaa Sports | Store</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="/static/scss/styles.css" />
+    <script src="/static/script/store.js" async></script>
+</head>
+<body>
+<header class="main-header">
+    <h1 class="band-name band-name-large">Team Aaiaa Sports Store</h1>
+</header>
+<section class="container content-section">
+    <h2 class="section-header">Sports Equipment</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Soccer Ball</span>
+            <img class="shop-item-image" src="/static/assets/soccer%20ball.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$12.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Baseball Bat</span>
+            <img class="shop-item-image" src="/static/assets/baseball%20bat.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$14.99</span>
+                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Football Helmet</span>
+            <img class="shop-item-image" src="/static/assets/football%20helmet.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$9.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Ultimate Running Shoes</span>
+            <img class="shop-item-image" src="/static/assets/running%20shoes.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">Clothes</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Basketball Jersey</span>
+            <img class="shop-item-image" src="/static/assets/basketball%20jersey.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Athletic Sweatpants</span>
+            <img class="shop-item-image" src="/static/assets/sweatpants.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$6.99</span>
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+</section>
+<footer class="main-footer">
+    <div class="container main-footer-container">
+       <h3 class="band-name">Team Aaiaa Sports Store</h3>
+        <ul class="nav footer-nav">
+
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
