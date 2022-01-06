@@ -29,7 +29,7 @@
 | Timmy Lin:  | [Ticket]()  |
 | Noah Jeng:  | [Ticket]()  |
 | William Du:  | [Ticket]()  | 
-| Ritvik Keerthi:  | [Ticket]()  | 
+| Ritvik Keerthi: Finished up sports quiz with full functionality including js, html, and css.  | [Ticket]()  | 
 
 
 ### Week 3 
