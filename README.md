@@ -28,8 +28,8 @@
 | Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket]()  |
 | Timmy Lin:  | [Ticket]()  |
 | Noah Jeng:  | [Ticket]()  |
-| William Du:  | [Ticket]()  | 
-| Ritvik Keerthi:  | [Ticket]()  | 
+| William Du: Added a footer, an error page, and changed the theam/colors for the basketball quiz. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/42)  | 
+| Ritvik Keerthi: Finished up sports quiz with full functionality including js, html, and css.  | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/templates/basketballquiz.html)  | 
 
 
 ### Week 3 
