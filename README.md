@@ -25,7 +25,7 @@
 #### Progress
 | **Task** | **Evidence** |
 | ------------- | ------------- |
-| Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket]()  |
+| Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket](http://127.0.0.1:5000/ballgame)  |
 | Timmy Lin:  | [Ticket]()  |
 | Noah Jeng: Created a sports store page which uses js, html and css. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/pull/38/files)  |
 | William Du: Added a footer, an error page, and changed the theam/colors for the basketball quiz. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/42)  | 
