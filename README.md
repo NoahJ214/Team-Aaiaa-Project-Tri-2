@@ -25,9 +25,9 @@
 #### Progress
 | **Task** | **Evidence** |
 | ------------- | ------------- |
-| Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket]()  |
-| Timmy Lin:  | [Ticket]()  |
-| Noah Jeng:  | [Ticket]()  |
+| Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket](http://127.0.0.1:5000/ballgame)  |
+| Timmy Lin: Added four basic individual sports pages for basketball, baseball, football, and tennis. Added a live NBA standings display to the basketball page using an iFrame. Upgraded navbar so there is a live clock displayed along with a dark theme that is in progress. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/06ec320791a16c1682704481772a0e91d6684d9c)  |
+| Noah Jeng: Created a sports store page which uses js, html and css. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/pull/38/files)  |
 | William Du: Added a footer, an error page, and changed the theam/colors for the basketball quiz. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/42)  | 
 | Ritvik Keerthi: Finished up sports quiz with full functionality including js, html, and css.  | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/templates/basketballquiz.html)  | 
 
