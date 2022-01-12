@@ -9,6 +9,11 @@ from __init__ import app
 app.register_blueprint(app_crud)
 
 # connects default URL to render sportsstore.html
+
+from api.basketball import nba_api
+app.register_blueprint(nba_api)
+
+
 @app.route('/')
 def index():
     return render_template("index.html")
@@ -90,6 +95,7 @@ def index2():
 @app.route('/jeopardy')
 def jeopardy():
     return render_template("jeopardy.html")
+
 # @app.route('/basketball/', methods=['GET', 'POST'])
 # def basketball():
 #   url = "http://localhost:5000/api/basketball_api"
