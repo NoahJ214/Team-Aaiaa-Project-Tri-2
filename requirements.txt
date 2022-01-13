@@ -5,6 +5,6 @@ Werkzeug~=2.0.2
 flask_login
 flask_sqlalchemy
 flask_migrate
-flask_restful
+flask_restful>0.3.8
 numpy
 Pillow~=8.2.0

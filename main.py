@@ -8,6 +8,9 @@ from __init__ import app
 # create a Flask instance
 app.register_blueprint(app_crud)
 
+from api.basketball import nba_api
+app.register_blueprint(nba_api)
+
 # connects default URL to render sportsstore.html
 @app.route('/')
 def index():

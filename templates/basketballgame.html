@@ -5,6 +5,24 @@
     <div class="question"></div>
     <div class="answers"></div>
 </div>
+
+
+<table>
+    <tr>
+        <td>Input sports for the robot to choose from: </td>
+        <td><input type="text" id="inputtext" /></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button type="button" id="add" onclick="addRecord();">Add </button>
+            <button type="button" id="display" onclick="displayRecord();">Display</button>
+        </td>
+    </tr>
+</table>
+
+
+<div id='values'></div>
+
 <style>
     * {
         margin:0px;
@@ -131,7 +149,7 @@
 
 
 <div>
-    <button type="randomSport" onclick="randomSport()">Let the robot choose the best sport from a database: </button>
+    <button type="randomSport" onclick="randomSport()">Let the robot choose the best sport from a data structure: </button>
     <input name="randomSport" id="randomSport">
 </div>
 
@@ -142,6 +160,16 @@
         var randomSport = sports[Math.floor(Math.random() * sports.length)];
         document.getElementById('randomSport').value = randomSport;
     }
+    function addRecord() {
+        var inp = document.getElementById('inputtext');
+        sports.push(inp.value);
+        inp.value = "";
+    }
+
+    function displayRecord() {
+        document.getElementById("values").innerHTML = sports.join(", ");
+    }
 </script>
+
 
 </html>
