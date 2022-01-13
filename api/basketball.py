@@ -41,11 +41,77 @@ nba_list = [
     "You have chosen the Washington Wizards"
 ]
 
+locations = [
+    "Atlanta",
+    "Boston",
+    "Brooklyn",
+    "Charlotte",
+    "Chicago",
+    "Cleveland",
+    "Dallas",
+    "Denver",
+    "Detroit",
+    "San Fransisco",
+    "Houston",
+    "Indiana",
+    "Los Angeles",
+    "Los Angeles",
+    "Memphis",
+    "Miami",
+    "Milwaukee",
+    "Minnesota",
+    "New Orleans",
+    "New York",
+    "Oklahoma",
+    "Orlando",
+    "Philadelphia",
+    "Phoenix",
+    "Portland ",
+    "Sacramento",
+    "San Antonio",
+    "Toronto",
+    "Utah",
+    "Washington"
+]
+
+colors=[
+    "#E03A3E",
+    "#007A33",
+    "#000000",
+    "#1D1160",
+    "#CE1141",
+    "#860038",
+    "#4169e1",
+    "#191970",
+    "#FF0000",
+    "#006BB8",
+    "#FF0000",
+    "#002D62",
+    "#FF0000",
+    "#552583",
+    "#0000FF",
+    "#0000FF",
+    "#00471B",
+    "#191970",
+    "#0C2340",
+    "#006BB6",
+    "#007AC1",
+    "#0077C0",
+    "#0000FF",
+    "#7F00FF",
+    "#FF0000",
+    "#7F00FF",
+    "#C0C0C0",
+    "#FF0000",
+    "#000080",
+    "#000080"
+]
+
 
 def _init_nba():
     item_id = 1
     for item in nba_list:
-        nba_data.append({"id": item_id, "nba": item})
+        nba_data.append({"id": item_id, "nba": item, "location": locations[item_id-1]})
         item_id += 1
 
 
@@ -53,7 +119,11 @@ def _init_nba():
 def nba():
     if len(nba_data) == 0:
         _init_nba()
-    return render_template("layouts/NBATEAMS.html", nba=random.choice(nba_data)["nba"])
+    id = random.randint(0, len(nba_data)-1)
+    nba=nba_data[id]["nba"]
+    location=locations[id]
+    color=colors[id]
+    return render_template("layouts/NBATEAMS.html", nba=nba, location=location, color=color)
 
 
 

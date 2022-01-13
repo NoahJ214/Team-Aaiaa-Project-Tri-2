@@ -38,19 +38,19 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 </div>
 
             </li>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Database
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>SQL CRUD</a></li>
-                        <li><a class="dropdown-item" href={{ url_for('crud.search') }}>SQL Search</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Database
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href={{ url_for('crud.crud') }}>SQL CRUD</a></li>
+                            <li><a class="dropdown-item" href={{ url_for('crud.search') }}>SQL Search</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
@@ -82,17 +82,17 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 </ul>
             </div>
         </div>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">API
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                    <li><a class="dropdown-item" href={{ url_for('api.nba') }}>NBA API</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">API
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href={{ url_for('api.nba') }}>NBA API</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <div>
@@ -100,7 +100,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     </div>
     <div>
         <button onclick="dark()">Toggle dark mode</button>
-    <div/>
+        <div/>
 </nav>
 </html>
 
