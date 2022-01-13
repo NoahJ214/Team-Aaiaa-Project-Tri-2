@@ -1,37 +1,84 @@
-## Welcome to GitHub Pages
+# AP CSP Period 4: Team Aaiaa
 
-You can use the [editor on GitHub](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## [Deployed Website](http://aaiaa.crabdance.com)
 
-### Markdown
+## [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1)
+## [Insights with Contributors and Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/graphs/contributors)
+## [Tim, Nat, and Noa Journal](https://docs.google.com/document/d/1UPgaLH_43fjmX9X04RuxzXEYBlq-SOSX3XvEvOp0yCE/edit?usp=sharing)
+## [Ritvik and William Journal](https://docs.google.com/document/d/10kLbZfA-buoykTZGUwkormMoxzioGr417bbY6eDFoos/edit?usp=sharing)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## CONTRIBUTORS
+| **Name** | **Github Profile** | **Assigned Tasks** | **Scrum Board** | **Commits** |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| Nathan Shih | [@NathanShih04](https://github.com/NathanShih04) | [Tasks](https://github.com/NathanShih04/GamerGroupRepository/issues/assigned/NathanShih04) | [Scrum Board](https://github.com/NathanShih04/GamerGroupRepository/projects/1) | [Commits](https://github.com/NathanShih04/GamerGroupRepository/commits?author=NathanShih04) |
+| Timmy Lin | [@TimL1n](https://github.com/TimL1n) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues?q=assignee%3ATimL1n+is%3Aopen) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1?card_filter_query=assignee%3Atiml1n) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=TimL1n) |
+| Noah Jeng | [@NoahJ214](https://github.com/NoahJ214) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/NoahJ214) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=NoahJ214) |
+| William Du | [@WilliamDu22](https://github.com/WilliamDu22) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/WilliamDu22) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=WilliamDu22) |
+| Ritvik Keerthi | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/assigned/Ritvik-Keerthi) | [Scrum Board](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/projects/1) | [Commits](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits?author=Ritvik-Keerthi) |
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## TIME TABLE
 
-- Bulleted
-- List
+### Week 4
 
-1. Numbered
-2. List
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: Redid Basketball game and changed it into sports poll. Added a random generator that takes from an array. | [Ticket](http://127.0.0.1:5000/ballgame)  |
+| Timmy Lin: Added four basic individual sports pages for basketball, baseball, football, and tennis. Added a live NBA standings display to the basketball page using an iFrame. Upgraded navbar so there is a live clock displayed along with a dark theme that is in progress. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/06ec320791a16c1682704481772a0e91d6684d9c)  |
+| Noah Jeng: Created a sports store page which uses js, html and css. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/pull/38/files)  |
+| William Du: Added a footer, an error page, and changed the theam/colors for the basketball quiz. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/42)  | 
+| Ritvik Keerthi: Finished up sports quiz with full functionality including js, html, and css.  | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/templates/basketballquiz.html)  | 
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### Week 3 
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: overview of progress using GitHub README, Tickets (Completed and Backlog), and Wiki. Show expected backlog when returning from Winter Break. Work on PBL game and jeopardy | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/4d1441f7a01442de2876eee7172da1496b322a52)  |
+| Timmy Lin: Deployment manager showing Web Site running from URL (https), and demonstrating the process to perform an update. | [Ticket]()  |
+| Noah Jeng: GitHub admin highlighting issue, commits, and pull requests completed by each individual. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commits/main)  |
+| William Du: show bootstrap layouts, and at least 3 frontend screens with functionality toward Project Theme. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/static/scss/custom.css)  | 
+| Ritvik Keerthi: Technical officer highlighting Asynchronous access(es) to a Database (expectation is a Search and/or a CRUD operations), and started basketball quiz | [Ticket]()  | 
 
-### Jekyll Themes
+#### PBL Highlights
+| **Highlights** | **Evidence** |
+| ------------- | ------------- |
+| Basketball Quiz:  | [Ticket](http://aaiaa.crabdance.com/ballquiz)  |
+| Basketball Game:  | [Ticket](http://aaiaa.crabdance.com/ballgame)  |
+| Sports Jeopardy:  | [Ticket](http://aaiaa.crabdance.com/jeopardy)  |
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Week 2 
 
-### Support or Contact
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: ReadMe clean up, release day policies, and Scrum Board to week after break | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/b17207e519607606350799332a6c5381b0c95bf9)  |
+| Timmy Lin: Deploy website and get the link of the it | [Ticket]()  |
+| Noah Jeng: Api, About me page, resolved commit and pull issues within IntelliJ | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/commit/0275e78c4d6590a440f87da6601c6cbb2f5b2d38)  |
+| William Du: got api working, finished read me, and worked on nav bar. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/templates/william.html)  | 
+| Ritvik Keerthi: Finished API, Familiarization with SQL database | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/blob/main/api/web_api.py)  | 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Week 1 
+
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan: Create and assign tasks on scrumboard| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki)  |
+| Timmy Lin: Put together Deployment wiki and brainwrite | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Deployment)  |
+| Noah Jeng: Create management plan to prevent commit and pull issues| [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Management-Plan)  |
+| William Du: Create a wire frame idea for the front page of out website. | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/wiki/Wire-Frame)  |
+| Ritvik Keerthi: Made 10 key ideas and begin database work | [Ticket](https://github.com/NoahJ214/Team-Aaiaa-Project-Tri-2/issues/9)  | 
+
+### Week _
+
+#### Progress
+| **Task** | **Evidence** |
+| ------------- | ------------- |
+| Nathan:  | [Ticket]()  |
+| Timmy Lin:  | [Ticket]()  |
+| Noah Jeng:  | [Ticket]()  |
+| William Du:  | [Ticket]()  | 
+| Ritvik Keerthi:  | [Ticket]()  | 
