@@ -1,12 +1,13 @@
 # import "packages" from flask
 import json
 
-
+from Blueprints.profiles import profiles
 from crud.app_crud import app_crud
 from flask import render_template, request, Flask
 from __init__ import app
 # create a Flask instance
 app.register_blueprint(app_crud)
+app.register_blueprint(profiles)
 
 # connects default URL to render sportsstore.html
 
@@ -20,28 +21,6 @@ def index():
 
 
 # connects /kangaroos path to render kangaroos.html
-@app.route('/timmy/')
-def Timmy():
-    return render_template("timothy.html")
-
-
-@app.route('/ritvik/', methods=['GET', 'POST'])
-def Ritvik():
-    return render_template("ritvik.html")
-
-
-
-@app.route('/nathan/')
-def Nathan():
-    return render_template("nathan.html")
-
-@app.route('/william/')
-def William():
-    return render_template("william.html")
-
-@app.route('/noah/')
-def Noah():
-    return render_template("noah.html")
 
 @app.route('/basketball/')
 def basketball():
