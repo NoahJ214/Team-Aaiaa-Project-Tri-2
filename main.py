@@ -74,7 +74,9 @@ def index2():
 @app.route('/jeopardy')
 def jeopardy():
     return render_template("jeopardy.html")
-
+@app.route('/scratch')
+def scratch():
+    return render_template("pabl/scratch.html")
 # @app.route('/basketball/', methods=['GET', 'POST'])
 # def basketball():
 #   url = "http://localhost:5000/api/basketball_api"
