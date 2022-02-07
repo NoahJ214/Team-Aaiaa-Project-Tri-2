@@ -1,6 +1,7 @@
 # import "packages" from flask
+import random
 import json
-
+import requests
 from Blueprints.profiles import profiles
 from crud.app_crud import app_crud
 from flask import render_template, request, Flask
@@ -13,6 +14,7 @@ app.register_blueprint(profiles)
 
 from api.basketball import nba_api
 app.register_blueprint(nba_api)
+
 
 
 @app.route('/')
@@ -47,13 +49,17 @@ def basketballquiz():
 def basketballgame():
     return render_template("basketballgame.html")
 
-@app.route('/sportsstore')
-def sportsstore():
-    return render_template("sportsstore.html")
+@app.route('/store')
+def store():
+    return render_template("store.html")
 
 @app.route('/cart')
 def cart():
     return render_template("cart.html")
+
+@app.route('/EPL')
+def EPL():
+    return render_template("EPL.html")
 
 @app.route('/products')
 def products():
@@ -63,13 +69,9 @@ def products():
 def checkout():
     return render_template("checkout.html")
 
-@app.route('/store')
-def store():
-    return render_template("store.html")
-
-@app.route('/testSTORE')
-def test():
-    return render_template("testSTORE.html")
+@app.route('/STOREt')
+def STOREt():
+    return render_template("STOREt.html")
 
 @app.route('/index2')
 def index2():
@@ -79,9 +81,11 @@ def index2():
 @app.route('/jeopardy')
 def jeopardy():
     return render_template("jeopardy.html")
+
 @app.route('/scratch')
 def scratch():
     return render_template("pabl/scratch.html")
+
 # @app.route('/basketball/', methods=['GET', 'POST'])
 # def basketball():
 #   url = "http://localhost:5000/api/basketball_api"
@@ -91,3 +95,4 @@ def scratch():
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
+
