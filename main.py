@@ -63,6 +63,7 @@ def tennis():
 def basketballquiz():
     return render_template("basketballquiz.html")
 
+
 @app.route('/ballgame')
 def basketballgame():
     return render_template("basketballgame.html")
@@ -86,6 +87,10 @@ def checkout():
 @app.route('/store')
 def store():
     return render_template("store.html")
+
+@app.route('/testSTORE')
+def test():
+    return render_template("testSTORE.html")
 
 @app.route('/index2')
 def index2():

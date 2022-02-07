@@ -1,21 +1,15 @@
-{% include "layouts/navbar.html" %}
+{% include "layouts/layout.html" %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Team Aaiaa Sports | Store</title>
-    <meta name="description" content="This is the description">
-    <link rel="stylesheet" href="/static/scss/styles.scss" />
-    <script src="/static/script/store.js" async></script>
-</head>
+
+<html len="en">
 <body>
 <header class="main-header">
     <h1 class="band-name band-name-large">Team Aaiaa Sports Store</h1>
 </header>
-<section class="container content-section">
+<section class="row-cols-auto">
     <h2 class="section-header">Sports Equipment</h2>
     <div class="shop-items">
-        <div class="shop-item">
+        <div class="center" >
             <span class="shop-item-title">Soccer Ball</span>
             <img class="shop-item-image" src="/static/assets/soccer%20ball.jpg">
             <div class="shop-item-details">
@@ -23,7 +17,7 @@
                 <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
-        <div class="shop-item">
+        <div class="center">
             <span class="shop-item-title">Baseball Bat</span>
             <img class="shop-item-image" src="/static/assets/baseball%20bat.jpg">
             <div class="shop-item-details">
@@ -31,15 +25,15 @@
                 <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
             </div>
         </div>
-        <div class="shop-item">
-            <span class="shop-item-title">Football Helmet</span>
+        <div class="center">
+        <span class="shop-item-title">Football Helmet</span>
             <img class="shop-item-image" src="/static/assets/football%20helmet.jpg">
             <div class="shop-item-details">
                 <span class="shop-item-price">$9.99</span>
                 <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
-        <div class="shop-item">
+        <div class="center">
             <span class="shop-item-title">Ultimate Running Shoes</span>
             <img class="shop-item-image" src="/static/assets/running%20shoes.jpg">
             <div class="shop-item-details">
@@ -49,10 +43,10 @@
         </div>
     </div>
 </section>
-<section class="container content-section">
+<section class="row-cols-auto">
     <h2 class="section-header">Clothes</h2>
     <div class="shop-items">
-        <div class="shop-item">
+        <div class="center">
             <span class="shop-item-title">Basketball Jersey</span>
             <img class="shop-item-image" src="/static/assets/basketball%20jersey.jpg">
             <div class="shop-item-details">
@@ -60,7 +54,7 @@
                 <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
         </div>
-        <div class="shop-item">
+        <div class="center">
             <span class="shop-item-title">Athletic Sweatpants</span>
             <img class="shop-item-image" src="/static/assets/sweatpants.jpg">
             <div class="shop-item-details">
@@ -87,13 +81,17 @@
 </section>
 <footer class="main-footer">
     <div class="container main-footer-container">
-       <h3 class="band-name">Team Aaiaa Sports Store</h3>
-        <ul class="nav footer-nav">
-
-        </ul>
+        <ul class="nav footer-nav"></ul>
     </div>
 </footer>
 </body>
 </html>
+<!--<head>
+    <title>Team Aaiaa Sports | Store</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="/static/scss/styles.scss" />
+    <script src="/static/script/store.js" async></script>
+</head>-->
+
 
 {% include "layouts/footer.html" %}
