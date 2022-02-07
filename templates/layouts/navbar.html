@@ -62,6 +62,8 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                             <li><a class="dropdown-item" href={{ url_for('basketballgame') }}>Best Sport Poll</a></li>
                             <li><a class="dropdown-item" href={{ url_for('jeopardy') }}>Jeopardy</a></li>
                             <li><a class="dropdown-item" href={{ url_for('store') }}>Sports Store</a></li>
+                            <li><a class="dropdown-item" href="/scratch/">Super Cool Game</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -80,6 +82,12 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                         </ul>
                     </li>
                 </ul>
+            </div>
+        </div>
+        <div class="btn-group">
+            <!-- Search Box -->
+            <div class="px-3">
+                <input id="search" type="search" placeholder="Search" aria-label="Search">
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -137,8 +145,28 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         color: white;
     }
 </style>
+<link rel="shortcut icon" href="/static/assets/heheheha.png">
 
 <script>
+
+    const search = document.getElementById('search');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'https://nighthawkcodingsociety.com';
+
+    function submitted(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const url = google
+                + site
+                + '+'
+                + search.value;
+            const win = window.open(url, '_blank');
+            win.focus();
+        }
+    }
+    search.addEventListener('keypress', submitted);
+
+
     var clockElement = document.getElementById('clock');
 
     function clock() {

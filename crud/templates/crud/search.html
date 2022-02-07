@@ -2,8 +2,39 @@
 <!-- Preparing search using asynchronous "fetch" (no page reload, no wait)
 inspiration from https://www.youtube.com/watch?v=QKcVjdLEX_s
 -->
-{% include "layouts/layout.html" %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+{% include "layouts/navbar.html" %}
+<style>
+
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+
+    .button:hover {
+        background-color: #4CAF50;
+        color: white;
+
+    }
+    .button {padding: 10px 24px;}
+
+</style>
 {% block meta %}
 <title>SQL search</title>
 {% endblock %}
@@ -26,7 +57,7 @@ inspiration from https://www.youtube.com/watch?v=QKcVjdLEX_s
                             <input type="text" class="form-control" id="term" placeholder="enter search term">
                             <label></label> <!-- used for spacer -->
                         </div>
-                        <button class="btn btn-primary bg-secondary" onclick="search_data();">Search</button>
+                        <button class="button" onclick="search_data();">Search</button>
                     </div>
                 </div>
             </div>
