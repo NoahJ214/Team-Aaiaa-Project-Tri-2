@@ -89,6 +89,10 @@ def store():
 def index2():
     return render_template("index2.html")
 
+@app.route('/countdown')
+def countdown():
+    return render_template("countdown.html")
+
 
 @app.route('/jeopardy')
 def jeopardy():
