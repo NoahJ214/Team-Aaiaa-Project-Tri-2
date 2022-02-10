@@ -172,10 +172,22 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
 
 <style>
     body {
-        background-image: url('https://wallpaperaccess.com/full/4509961.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
+        animation-name: imageswitch1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
     }
+
+    @keyframes imageswitch1 {
+        0% {background: url("https://media.istockphoto.com/photos/american-football-on-stadium-field-at-school-campus-picture-id1242591562?b=1&k=20&m=1242591562&s=170667a&w=0&h=xivcO7stx3b6vZPnaHOnuPZKrK9ehN1brL-BvtZHpLQ=");}
+        25% {background: url("https://www.thesportsbank.net/wp-content/uploads/2020/05/football-stadium-soccer.jpg");}
+        50% {background: url("https://t4.ftcdn.net/jpg/02/87/03/99/360_F_287039963_jTkB3wIxJ5BWLuHQnoIqkFJZzLailDEK.jpg");}
+        75% {background: url("https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max")}
+        100% {background: url("https://media.istockphoto.com/photos/american-soccer-stadium-3d-rendering-picture-id626459840?k=20&m=626459840&s=612x612&w=0&h=olEYBYKrJBfsdDpvhRDMKh3MhSTP9LkFYViK89sxTas=");}
+    }
+
+    /* background-image: url('https://wallpaperaccess.com/full/4509961.jpg'); */
 </style>
 </html>
 

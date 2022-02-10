@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-<style>
-    p {
-        color: {{ color }};
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
-        font-size: 30px;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-
-    }
-</style>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,11 +18,11 @@
 {% include "layouts/navbar.html" %}
 <body style="min-height: 100vh; display: grid; grid-template-rows: auto 1fr;">
 
-<div id="teamdisplay" style="background: {{ color }}"><p>{{ nba }}</p>
-    <p id="teamlocation">
+<div id="teamdisplay" style="background: {{ color }}"><h3>{{ nba }}</h3>
+    <h4 id="teamlocation">
         They are located in {{ location }}
 
-    </p>
+    </h4>
     <a class="btn btn-primary" href="/nba_api/nba">Click for a Random Team!</a>
 
 </div>

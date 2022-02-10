@@ -86,6 +86,10 @@ def jeopardy():
 def countdown():
     return render_template("countdown.html")
 
+@app.route('/roster')
+def roster():
+    return render_template("roster.html")
+
 @app.route('/scratch')
 def scratch():
     return render_template("pabl/scratch.html")
@@ -99,4 +103,3 @@ def scratch():
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
-
