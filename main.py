@@ -82,6 +82,10 @@ def index2():
 def jeopardy():
     return render_template("jeopardy.html")
 
+@app.route('/countdown')
+def countdown():
+    return render_template("countdown.html")
+
 @app.route('/scratch')
 def scratch():
     return render_template("pabl/scratch.html")
