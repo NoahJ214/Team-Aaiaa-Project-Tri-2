@@ -57,9 +57,9 @@ def store():
 def cart():
     return render_template("cart.html")
 
-@app.route('/searchbar')
-def searchbar():
-    return render_template("searchbar.html")
+@app.route('/survey')
+def survey():
+    return render_template("survey.html")
 
 @app.route('/EPL')
 def EPL():
