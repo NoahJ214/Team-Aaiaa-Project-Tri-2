@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{%  block body %}
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body {
+                background: none;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            #myInput {
+                background-image: url('/css/searchicon.png');
+                background-position: 30px 12px;
+                background-repeat: no-repeat;
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 20px 12px 40px;
+                border: 1px solid #ddd;
+                margin-bottom: 0px;
+            }
+
+            #myUL {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #myUL li a {
+                border: 1px solid #ddd;
+                margin-top: -1px; /* Prevent double borders */
+                background-color: none;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                color: black;
+                display: block
+            }
+
+            #myUL li a:hover:not(.header) {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Filter NBA Teams</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <ul id="myUL">
+        <li><a href="#">Atlanta Hawks</a></li>
+        <li><a href="#">Boston Celtics</a></li>
+        <li><a href="#">Brooklyn Nets</a></li>
+        <li><a href="#">Charlotte Hornets</a></li>
+        <li><a href="#">Chicago Bulls</a></li>
+        <li><a href="#">Cleveland Cavaliers</a></li>
+        <li><a href="#">Dallas Mavericks</a></li>
+        <li><a href="#">Denver Nuggets</a></li>
+        <li><a href="#">Detroit Pistons</a></li>
+        <li><a href="#">Golden State Warriors</a></li>
+        <li><a href="#">Houston Rockets</a></li>
+        <li><a href="#">Indiana Pacers</a></li>
+        <li><a href="#">Los Angeles Clippers</a></li>
+        <li><a href="#">Los Angeles Lakers</a></li>
+        <li><a href="#">Memphis Grizzlies</a></li>
+        <li><a href="#">Miami Heat</a></li>
+        <li><a href="#">Milwaukee Bucks</a></li>
+        <li><a href="#">Minnesota Timberwolves</a></li>
+        <li><a href="#">New Orleans Pelicans</a></li>
+        <li><a href="#">New York Knicks</a></li>
+        <li><a href="#">Oklahoma City Thunder</a></li>
+        <li><a href="#">Orlando Magic</a></li>
+        <li><a href="#">Philadelphia 76ers</a></li>
+        <li><a href="#">Phoenix Suns</a></li>
+        <li><a href="#">Portland Trail Blazers</a></li>
+        <li><a href="#">Sacramento Kings</a></li>
+        <li><a href="#">San Antonio Spurs</a></li>
+        <li><a href="#">Toronto Raptors</a></li>
+        <li><a href="#">Utah Jazz</a></li>
+        <li><a href="#">Washington Wizards</a></li>
+    </ul>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    </body>
+    </html>
+{% endblock %}<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{%  block body %}
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            body {
+                background: none;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            #myInput {
+                background-image: url('/css/searchicon.png');
+                background-position: 30px 12px;
+                background-repeat: no-repeat;
+                width: 100%;
+                font-size: 16px;
+                padding: 12px 20px 12px 40px;
+                border: 1px solid #ddd;
+                margin-bottom: 0px;
+            }
+
+            #myUL {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #myUL li a {
+                border: 1px solid #ddd;
+                margin-top: -1px; /* Prevent double borders */
+                background-color: none;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                color: black;
+                display: block
+            }
+
+            #myUL li a:hover:not(.header) {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+
+    <h2>Filter NBA Teams</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <ul id="myUL">
+        <li><a href="#">Atlanta Hawks</a></li>
+        <li><a href="#">Boston Celtics</a></li>
+        <li><a href="#">Brooklyn Nets</a></li>
+        <li><a href="#">Charlotte Hornets</a></li>
+        <li><a href="#">Chicago Bulls</a></li>
+        <li><a href="#">Cleveland Cavaliers</a></li>
+        <li><a href="#">Dallas Mavericks</a></li>
+        <li><a href="#">Denver Nuggets</a></li>
+        <li><a href="#">Detroit Pistons</a></li>
+        <li><a href="#">Golden State Warriors</a></li>
+        <li><a href="#">Houston Rockets</a></li>
+        <li><a href="#">Indiana Pacers</a></li>
+        <li><a href="#">Los Angeles Clippers</a></li>
+        <li><a href="#">Los Angeles Lakers</a></li>
+        <li><a href="#">Memphis Grizzlies</a></li>
+        <li><a href="#">Miami Heat</a></li>
+        <li><a href="#">Milwaukee Bucks</a></li>
+        <li><a href="#">Minnesota Timberwolves</a></li>
+        <li><a href="#">New Orleans Pelicans</a></li>
+        <li><a href="#">New York Knicks</a></li>
+        <li><a href="#">Oklahoma City Thunder</a></li>
+        <li><a href="#">Orlando Magic</a></li>
+        <li><a href="#">Philadelphia 76ers</a></li>
+        <li><a href="#">Phoenix Suns</a></li>
+        <li><a href="#">Portland Trail Blazers</a></li>
+        <li><a href="#">Sacramento Kings</a></li>
+        <li><a href="#">San Antonio Spurs</a></li>
+        <li><a href="#">Toronto Raptors</a></li>
+        <li><a href="#">Utah Jazz</a></li>
+        <li><a href="#">Washington Wizards</a></li>
+    </ul>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    </body>
+    </html>
+{% endblock %}
