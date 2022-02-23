@@ -1,0 +1,97 @@
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="example">
+    <input type="text" id = "form" placeholder="Search.." name="search">
+
+    <button onclick="myFunction()" type="submit"><i class="fa fa-search"></i>
+    </button>
+</form>
+<script>
+
+
+    var dict={
+        <!-- Football -->
+        "Cardinals":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Falcons":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Panthers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Bears":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Cowboys":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Lions":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Green Bay Packers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Rams":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Vikings":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Saints":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Giants":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Eagles":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "49ers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Seahawks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Buccaneers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Commanders":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Ravens":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Bills":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Bengals":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Browns":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Broncos":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Texans":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Colts":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Jaguars":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Chiefs":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Raiders":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Chargers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Dolphins":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Patriots":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Steelers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Titans":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+
+
+        <!-- Basketball -->
+        "76ers":["player 1","player 2 ", "player 3 ", "player 4 "],
+        "Bucks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Bulls":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Cavaliers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Celtics":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Clippers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Grizzlies":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Hawks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Heat":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Hornets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Jazz":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Kings":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Knicks":["Ryan Arcidiacono ","Alec Burks ", "RJ Barrett ", "Evan Fournier ", "Quentin Grimes ", "Taj Gibson ", "Miles McBride ", "Nerlens Noel ", "Immanuel Quickley ", "Derrick Rose ", "Mitchell Robinson ", "Cam Reddish ", "Julius Randle ", "Jericho Sims ", "Luka Samanic ", "Obi Toppin ","Kemba Walker "],
+        "Lakers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Magic":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Mavericks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Nets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Nuggets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Pacers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Pelicans":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Pistons":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Raptors":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Rockets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Spurs":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Suns":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Thunder":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Timberwolves":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Trail Blazers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Warriors":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+        "Wizards":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+    };
+
+    function myFunction() {
+
+        let sportsTeam = document.getElementById('form').value;
+        let players = dict[sportsTeam];
+
+        if (sportsTeam in dict) {
+            document.write(players);
+        }
+        else {
+            alert("No such team exists, please search again.");
+        }
+
+
+    }
+
+</script>

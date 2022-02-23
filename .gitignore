@@ -9,3 +9,4 @@
 *.pyc
 .idea/dataSources.xml
 .idea/inspectionProfiles/Project_Default.xml
+.idea/workspace.xml

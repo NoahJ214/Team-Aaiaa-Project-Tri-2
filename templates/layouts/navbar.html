@@ -89,9 +89,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <div>
         <span id="clock" style="color: black; float: right"></span>
     </div>
-    <div>
-        <button onclick="dark()">Toggle dark mode</button>
-    <div/>
 </nav>
 </html>
 
@@ -125,21 +122,4 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         element.classList.toggle("dark-mode");
     }
 
-
-    const search = document.getElementById('search');
-    const google = 'https://www.google.com/search?q=site%3A+';
-    const site = 'https://nighthawkcodingsociety.com';
-
-    function submitted(event) {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            const url = google
-                + site
-                + '+'
-                + search.value;
-            const win = window.open(url, '_blank');
-            win.focus();
-        }
-    }
-    search.addEventListener('keypress', submitted);
 </script>

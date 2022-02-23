@@ -1,42 +1,28 @@
 # import "packages" from flask
+import random
 import json
-
-
+import requests
+from Blueprints.profiles import profiles
 from crud.app_crud import app_crud
 from flask import render_template, request, Flask
 from __init__ import app
 # create a Flask instance
 app.register_blueprint(app_crud)
+app.register_blueprint(profiles)
 
 # connects default URL to render sportsstore.html
+
+from api.basketball import nba_api
+app.register_blueprint(nba_api)
+
+
+
 @app.route('/')
 def index():
     return render_template("index.html")
 
 
 # connects /kangaroos path to render kangaroos.html
-@app.route('/timmy/')
-def Timmy():
-    return render_template("timothy.html")
-
-
-@app.route('/ritvik/', methods=['GET', 'POST'])
-def Ritvik():
-    return render_template("ritvik.html")
-
-
-
-@app.route('/nathan/')
-def Nathan():
-    return render_template("nathan.html")
-
-@app.route('/william/')
-def William():
-    return render_template("william.html")
-
-@app.route('/noah/')
-def Noah():
-    return render_template("noah.html")
 
 @app.route('/basketball/')
 def basketball():
@@ -58,17 +44,26 @@ def tennis():
 def basketballquiz():
     return render_template("basketballquiz.html")
 
+
 @app.route('/ballgame')
 def basketballgame():
     return render_template("basketballgame.html")
 
-@app.route('/sportsstore')
-def sportsstore():
-    return render_template("sportsstore.html")
+@app.route('/store')
+def store():
+    return render_template("store.html")
 
 @app.route('/cart')
 def cart():
     return render_template("cart.html")
+
+@app.route('/survey')
+def survey():
+    return render_template("survey.html")
+
+@app.route('/EPL')
+def EPL():
+    return render_template("EPL.html")
 
 @app.route('/products')
 def products():
@@ -78,9 +73,9 @@ def products():
 def checkout():
     return render_template("checkout.html")
 
-@app.route('/store')
-def store():
-    return render_template("store.html")
+@app.route('/STOREt')
+def STOREt():
+    return render_template("STOREt.html")
 
 @app.route('/index2')
 def index2():
@@ -90,6 +85,19 @@ def index2():
 @app.route('/jeopardy')
 def jeopardy():
     return render_template("jeopardy.html")
+
+@app.route('/countdown')
+def countdown():
+    return render_template("countdown.html")
+
+@app.route('/roster')
+def roster():
+    return render_template("roster.html")
+
+@app.route('/scratch')
+def scratch():
+    return render_template("pabl/scratch.html")
+
 # @app.route('/basketball/', methods=['GET', 'POST'])
 # def basketball():
 #   url = "http://localhost:5000/api/basketball_api"

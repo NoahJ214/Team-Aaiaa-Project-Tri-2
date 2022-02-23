@@ -1,4 +1,5 @@
 {% include "layouts/layout.html" %}
+<!-- All of this is css code, plan to move over to another file, to make it more efficient and easier to see -->
 <body onload="NextQuestion(0)">
 <main>
     <head>
@@ -297,8 +298,9 @@
         <div class="modal-content-container">
 
             <h1>We have come to the end of the road, my friend. </h1>
-
+            <!-- Div that gives all details of the grade (shows up towards the end) -->
             <div class="grade-details">
+
                 <p>Incorrect: <span id="incorrect-solution"></span></p>
                 <p>Correct: <span id="correct-solution"></span></p>
                 <p>Grade : <span id="grade"></span>%</p>
@@ -340,25 +342,25 @@
 
             <span>
                     <input type="radio" id="option-one" name="option" class="radio" value="A" />
-                    <label for="option-one" class="option" id="option-uno"></label>
+                    <label for="option-one" class="option" id="option-1"></label>
                 </span>
 
 
             <span>
                     <input type="radio" id="option-two" name="option" class="radio" value="B" />
-                    <label for="option-two" class="option" id="option-dos"></label>
+                    <label for="option-two" class="option" id="option-2"></label>
                 </span>
 
 
             <span>
                     <input type="radio" id="option-three" name="option" class="radio" value="C" />
-                    <label for="option-three" class="option" id="option-tres"></label>
+                    <label for="option-three" class="option" id="option-3"></label>
                 </span>
 
 
             <span>
                     <input type="radio" id="option-four" name="option" class="radio" value="D" />
-                    <label for="option-four" class="option" id="option-cuatro"></label>
+                    <label for="option-four" class="option" id="option-4"></label>
                 </span>
 
 
@@ -515,10 +517,10 @@
             document.getElementById("QNum").innerHTML = questionNumber
             document.getElementById("current-score").innerHTML = score
             document.getElementById("display-question").innerHTML = currentQuestion.question;
-            document.getElementById("option-uno").innerHTML = currentQuestion.A;
-            document.getElementById("option-dos").innerHTML = currentQuestion.B;
-            document.getElementById("option-tres").innerHTML = currentQuestion.C;
-            document.getElementById("option-cuatro").innerHTML = currentQuestion.D;
+            document.getElementById("option-1").innerHTML = currentQuestion.A;
+            document.getElementById("option-2").innerHTML = currentQuestion.B;
+            document.getElementById("option-3").innerHTML = currentQuestion.C;
+            document.getElementById("option-4").innerHTML = currentQuestion.D;
 
         }
 
