@@ -1,8 +1,19 @@
+<style>
+    body {background-color: powderblue;}
+    searchbar {
+        border: 2px
+    }
+</style>
+
+
+
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
 <!-- The form -->
-<form class="example">
+<form class="searchbar">
     <input type="text" id = "form" placeholder="Search.." name="search">
 
     <button onclick="myFunction()" type="submit"><i class="fa fa-search"></i>
@@ -12,83 +23,149 @@
 
 
     var dict={
-        <!-- Football -->
-        "Cardinals":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Falcons":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Panthers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Bears":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Cowboys":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Lions":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Green Bay Packers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Rams":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Vikings":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Saints":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Giants":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Eagles":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "49ers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Seahawks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Buccaneers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Commanders":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Ravens":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Bills":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Bengals":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Browns":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Broncos":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Texans":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Colts":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Jaguars":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Chiefs":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Raiders":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Chargers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Dolphins":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Patriots":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Steelers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Titans":["player 1 ","player 2 ", "player 3 ", "player 4 "],
+
+        "76ers":["Brown Jr., Charlie","Bassey, Charles","Cauley-Stein, Willie","Embiid, Joel","Green, Danny","Harris, Tobias","Harden, James","Joe, Isaiah","Korkmaz, Furkan","Maxey, Tyrese","Millsap, Paul","Milton, Shake","Niang, Georges","Powell, Myles","Reed, Paul","Springer, Jaden","Thybulle, Matisse"],
+        "bucks":["Allen, Grayson","Antetokounmpo, Thanasis","Antetokounmpo, Giannis","Bembry, DeAndre","Carter, Jevon","Connaughton, Pat","Holiday, Jrue","Hill, George","Ibaka, Serge","Lopez, Brook","Middleton, Khris","Matthews, Wesley","Mamukelashvili, Sandro","Nwora, Jordan","Portis, Bobby","Wigginton, Lindell"],
+        "bulls":["Bradley, Tony","Brown Jr., Troy","Ball, Lonzo","Caruso, Alex","Cook, Tyler","Dosunmu, Ayo","DeRozan, DeMar","Green, Javonte","Hill, Malcolm","Jones Jr., Derrick","LaVine, Zach","Simonovic, Marko","Thompson, Tristan","Thomas, Matt","Vucevic, Nikola","Williams, Patrick","White, Coby"],
+        "cavaliers":["Allen, Jarrett","Davis, Ed","Goodwin, Brandon","Garland, Darius","LeVert, Caris","Love, Kevin","Markkanen, Lauri","Mobley, Evan","Nembhard Jr., RJ","Okoro, Isaac","Osman, Cedi","Rondo, Rajon","Stevens, Lamar","Sexton, Collin","Wade, Dean","Windler, Dylan"],
+        "celtics":["Brown, Jaylen","Fitts, Malik","Hauser, Sam","Horford, Al","Kornet, Luke","Martin, Kelan","Nesmith, Aaron","Pritchard, Payton","Smart, Marcus","Thomas, Brodric","Theis, Daniel","Tatum, Jayson","Williams, Grant","Williams III, Robert","White, Derrick"],
+        "clippers":["Boston Jr., Brandon","Batum, Nicolas","Covington, Robert","Coffey, Amir","George, Paul","Hartenstein, Isaiah","Hood, Rodney","Jackson, Reggie","Kennard, Luke","Leonard, Kawhi","Mann, Terance","Morris Sr., Marcus","Ojeleye, Semi","Powell, Norman","Preston, Jason","Scrubb, Jay","Zubac, Ivica"],
+        "grizzlies":["Adams, Steven","Aldama, Santi","Anderson, Kyle","Brooks, Dillon","Bane, Desmond","Culver, Jarrett","Clarke, Brandon","Jones, Tyus","Jackson Jr., Jaren","Konchar, John","Melton, De Anthony","Morant, Ja","Pons, Yves","Tillman, Xavier","Tillie, Killian","Terry, Tyrell","Williams, Ziaire"],
+        "hawks":["Bogdanovic, Bogdan","Cooper, Sharife","Capela, Clint","Collins, John","Dieng, Gorgui","Gallinari, Danilo","Huerter, Kevin","Hunter, De Andre","Johnson, Jalen","Knox II, Kevin","Luwawu-Cabarrot, Timothe","Mays, Skylar","Okongwu, Onyeka","Wright, Delon","Williams, Lou","Young, Trae"],
+        "heat":["Adebayo, Bam","Butler, Jimmy","Dedmon, Dewayne","Guy, Kyle","Herro, Tyler","Haslem, Udonis","Lowry, Kyle","Martin, Caleb","Morris, Markieff","Oladipo, Victor","Robinson, Duncan","Strus, Max","Smart, Javonte","Tucker, P.J.","Vincent, Gabe","Yurtseven, Omer"],
+        "hornets":["Bridges, Miles","Bouknight, James","Ball, LaMelo","Harrell, Montrezl","Hayward, Gordon","Jones, Kai","Kulboka, Arnoldas","Lewis, Scottie","McDaniels, Jalen","Martin, Cody","Oubre Jr., Kelly","Plumlee, Mason","Richards, Nick","Rozier, Terry","Thor, JT","Washington, P.J."],
+        "jazz":["Azubuike, Udoka","Alexander-Walker, Nickeil","Butler, Jared","Bogdanovic, Bojan","Conley, Mike","Clarkson, Jordan","Forrest, Trent","Gobert, Rudy","Gay, Rudy","Hernangomez, Juancho","House Jr., Danuel","Mitchell, Donovan","Neale, Royce","Paschall, Eric","Sneed, Xavier","Whiteside, Hassan"],
+        "kings":["Barnes, Harrison","DiVincenzo, Donte","Davis, Terence","Fox, Aaron","Holiday, Justin","Holmes, Richaun","Harkless, Maurice","Jones, Damian","Jackson, Josh","Len, Alex","Lamb, Jeremy","Lyles, Trey","Metu, Chimezie","Mitchell, Davion","Queta, Neemias","Sabonis, Domantas"],
+        "knicks":["Ryan Arcidiacono ","Alec Burks ", "RJ Barrett ", "Evan Fournier ", "Quentin Grimes ", "Taj Gibson ", "Miles McBride ", "Nerlens Noel ", "Immanuel Quickley ", "Derrick Rose ", "Mitchell Robinson ", "Cam Reddish ", "Julius Randle ", "Jericho Sims ", "Luka Samanic ", "Obi Toppin ","Kemba Walker "],
+        "lakers":["Ariza, Trevor","Anthony, Carmelo","Bradley, Avery","Bazemore, Kent","Doumbouya, Sekou","Davis, Anthony","Ellington, Wayne","Howard, Dwight","Horton-Tucker, Talen","Jordan, DeAndre","Jones, Mason","Johnson, Stanley","James, LeBron","Monk, Malik","Nunn, Kendrick","Reaves, Austin","Westbrook, Russell"],
+        "magic":["Anthony, Cole","Brazdeikis, Ignas","Bamba, Mo","Bol, Bol","Carter Jr., Wendell","Fultz, Markelle","Harris, Gary","Hampton, R.J.","Isaac, Jonathan","Lopez, Robin","Okeke, Chuma","Ross, Terrence","Suggs, Jalen","Schofield, Admiral","Wagner, Franz","Wagner, Moritz"],
+        "nets":["Aldridge, LaMarcus","Brown, Bruce","Curry, Seth","Claxton, Nic","Drummond, Andre","Duke Jr., David","Dragic, Goran","Durant, Kevin","Edwards, Kessler","Griffin, Blake","Harris, Joe","Irving, Kyrie","Johnson, James","Mills, Patty","Sharpe, Ron","Simmons, Ben","Thomas, Cam"],
+        "pacers":["Brogdon, Malcolm","Brissett, Oshae","Bitadze, Goga","Duarte, Chris","Haliburton, Tyrese","Hield, Buddy","Jackson, Isaiah","McConnell, T.J.","Rubio, Ricky","Stephenson, Lance","Smith, Jalen","Sykes, Keifer","Taylor, Terry","Turner, Myles","Warren, T.J.","Washington Jr., Duane"],
+        "pelicans":["Alvarado, Jose","Clark, Gary","Graham, Devonte","Hernangomez, Willy","Hayes, Jaxson","Ingram, Brandon","Jones, Herbert","Lewis Jr., Kira","McCollum, CJ","Marshall, Naji","Murphy III, Trey","Nance Jr., Larry","Snell, Tony","Temple, Garrett","Valanciunas, Jonas","Williamson, Zion"],
+        "rockets":["Christopher, Josh","Fernando, Bruno","Gordon, Eric","Green, Jalen","Garuba, Usman","Mathews, Garrison","Martin Jr., Kenyon","Nwaba, David","Nix, Daishen","Porter Jr., Kevin","Queen, Trevelin","Schroder, Dennis","Sengun, Alperen","Tate, Sean","Wall, John","Wood, Christian"],
+        "spurs":["Bates-Diop, Keita","Cacok, Devontae","Collins, Zach","Jones, Tre","Johnson, Keldon","Langford, Romeo","Landale, Jock","McDermott, Doug","Murray, Dejounte","Primo, Joshua","Poeltl, Jakob","Richardson, Josh","Satoransky, Tomas","Vassell, Devin","Walker IV, Lonnie","Wieskamp, Joe"],
+        "suns":["Ayton, Deandre","Bridges, Mikal","Booker, Devin","Biyombo, Bismack","Craig, Torrey","Crowder, Jae","Holiday, Aaron","Johnson, Cameron","Kaminsky, Frank","McGee, JaVale","Paul, Chris","Payne, Cameron","Payton, Elfrid","Shamet, Landry","Saric, Dario","Wainright, Ish"],
+        "timberwolves":["Beasley, Malik","Bolmaro, Leandro","Beverley, Patrick","Edwards, Anthony","Knight, Nathan","Layman, Jake","McLaughlin, Jordan","McDaniels, Jaden","Nowell, Jaylen","Okogie, Josh","Prince, Taurean","Russell, Angelo","Reid, Naz","Towns, Karl-Anthony","Vanderbilt, Jarred","Wright IV, McKinley"],
+        "trail blazers":["Brown III, Greg","Blevins, Keljin","Bledsoe, Eric","Elleby, CJ","Eubanks, Drew","Hart, Josh","Hughes, Elijah","Ingles, Joe","Johnson, Keon","Little, Nassir","Lillard, Damian","Louzada, Didi","McLemore, Ben","Nurkic, Jusuf","Simons, Anfernee","Winslow, Justise","Williams, Brandon","Watford, Trendon"],
+        "warriors":["Bjelica, Nemanja","Curry, Stephen","Chiozza, Chris","Green, Draymond","Iguodala, Andre","Kuminga, Jonathan","Lee, Damion","Looney, Kevon","Moody, Moses","Porter Jr., Otto","Poole, Jordan","Payton II, Gary","Toscano-Anderson, Juan","Thompson, Klay","Wiseman, James","Weatherspoon, Quinndary","Wiggins, Andrew"],
+        "wizards":["Avdija, Deni","Ayayi, Joel","Bryant, Thomas","Beal, Bradley","Caldwell-Pope, Kentavious","Carey Jr., Vernon","Gill, Anthony","Gafford, Daniel","Hachimura, Rui","Kuzma, Kyle","Kispert, Corey","Neto, Raul","Porzingis, Kristaps","Smith, Ish","Todd, Isaiah","Winston, Cassius"]
 
 
-        <!-- Basketball -->
-        "76ers":["player 1","player 2 ", "player 3 ", "player 4 "],
-        "Bucks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Bulls":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Cavaliers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Celtics":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Clippers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Grizzlies":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Hawks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Heat":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Hornets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Jazz":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Kings":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Knicks":["Ryan Arcidiacono ","Alec Burks ", "RJ Barrett ", "Evan Fournier ", "Quentin Grimes ", "Taj Gibson ", "Miles McBride ", "Nerlens Noel ", "Immanuel Quickley ", "Derrick Rose ", "Mitchell Robinson ", "Cam Reddish ", "Julius Randle ", "Jericho Sims ", "Luka Samanic ", "Obi Toppin ","Kemba Walker "],
-        "Lakers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Magic":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Mavericks":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Nets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Nuggets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Pacers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Pelicans":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Pistons":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Raptors":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Rockets":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Spurs":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Suns":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Thunder":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Timberwolves":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Trail Blazers":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Warriors":["player 1 ","player 2 ", "player 3 ", "player 4 "],
-        "Wizards":["player 1 ","player 2 ", "player 3 ", "player 4 "],
     };
 
-    function myFunction() {
 
-        let sportsTeam = document.getElementById('form').value;
+    function myFunction() {
+        let color = "red"
+        let color1 = "orange"
+        let color2 = "yellow"
+        let color3 = "green"
+        let color4 = "blue"
+        let color5 = "purple"
+
+
+
+        // get the value of what we typed into the search box
+        let sportTeam = document.getElementById('form').value;
+
+        let sportsTeam = sportTeam.toLowerCase();
+
         let players = dict[sportsTeam];
 
+
         if (sportsTeam in dict) {
-            document.write(players);
+            document.write("<h1>" + players + "</h1>" + "<style> body {text-align: center;} </style> ");
+
+
+
+            if (sportsTeam == "jazz") {
+                document.write("<style>" + "body {background-color: " + color3 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "kings"){
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "knicks") {
+                document.write("<style>" + "body {background-color: " + color1 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "lakers"){
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "magic") {
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "clippers"){
+                document.write("<style>" + "body {background-color: " + color4 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "grizzlies") {
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "hawks"){
+                document.write("<style>" + "body {background-color: " + color4 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "heat") {
+                document.write("<style>" + "body {background-color: " + color3 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "hornets"){
+                document.write("<style>" + "body {background-color: " + color5 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "jazz"){
+                document.write("<style>" + "body {background-color: " + color + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "kings") {
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "knicks"){
+                document.write("<style>" + "body {background-color: " + color4 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "lakers") {
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "magic"){
+                document.write("<style>" + "body {background-color: " + color + ";}" + "</style>");
+            }
+            else if (sportsTeam == "nets"){
+                document.write("<style>" + "body {background-color: " + color4 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "pacers") {
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "pelicans"){
+                document.write("<style>" + "body {background-color: " + color4 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "rockets") {
+                document.write("<style>" + "body {background-color: " + color5 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "spurs"){
+                document.write("<style>" + "body {background-color: " + color5 + ";}" + "</style>");
+
+            }
+
+            else if (sportsTeam == "trail blazers"){
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "suns") {
+                document.write("<style>" + "body {background-color: " + color5 + ";}" + "</style>");
+            }
+            else if (sportsTeam == "trail blazers"){
+                document.write("<style>" + "body {background-color: " + color4 + ";}" + "</style>");
+
+            }
+            if (sportsTeam == "wizards") {
+                document.write("<style>" + "body {background-color: " + color2 + ";}" + "</style>");
+            }
+
+
         }
         else {
-            alert("No such team exists, please search again.");
+            alert("No such team exists, please search again");
         }
 
 
