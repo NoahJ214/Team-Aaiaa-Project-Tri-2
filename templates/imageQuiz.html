@@ -123,8 +123,23 @@
         "lakers" : "/static/assets/Lakers.png",
         "patriots" : "/static/assets/patriots.png",
         "ravens" : "/static/assets/ravens.png",
-        "stars" : "/static/assets/Stars.png"
-
+        "stars" : "/static/assets/Stars.png",
+        "siu" : "/static/assets/siu.jpg",
+        "messi" : "/static/assets/messi.jpg",
+        "mbappe" : "/static/assets/mbappe.jpg",
+        "antonio brown" : "/static/assets/antonio brown.jpg",
+        "bucks" : "/static/assets/bucks.png",
+        "bulls" : "/static/assets/bulls.jpg",
+        "heat" : "/static/assets/heat.png",
+        "hornets" : "/static/assets/hornets.jpg",
+        "lebron" : "/static/assets/lebron.jpg",
+        "tottenham" : "/static/assets/tottenham.png",
+        "arsenal" : "/static/assets/arsenal.png",
+        "yankees" : "/static/assets/yankees.png",
+        "barcelona" : "/static/assets/barcelona.png",
+        "real madrid" : "/static/assets/realmadrid.png",
+        "blazers" : "/static/assets/blazers.png",
+        "grizzlies" : "/static/assets/grizzlies.png",
     }
     function populate() {
         if (quiz.isEnded()) {
@@ -169,11 +184,16 @@
 
     // create questions
     var questions = [
-        new Question("Which is the logo for the Los Angeles Lakers?", ["bat", "lakers", "soccer", "shoes"], "shoes"),
-        new Question("Which is the logo for the Golden State Warriors?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Which is the logo for the Cincinnati Bengals?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Which is the logo for the New Orleans Saints?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Which is the logo for the Anaheim Ducks?", ["bat", "sweatpants", "soccer", "shoes"], "se")
+        new Question("Which is the logo for the Los Angeles Lakers?", ["grizzlies", "lakers", "heat", "bucks"], "lakers"),
+        new Question("Which is the logo for the Portland Trailblazers?", ["blazers", "cardinals", "patriots", "golden knights"], "blazers"),
+        new Question("Which is the logo for Arsenal?", ["tottenham", "falcons", "stars", "arsenal"], "arsenal"),
+        new Question("Which is the logo for the Anaheim Ducks?", ["eagles", "ducks", "falcons", "ravens"], "ducks"),
+        new Question("Which is the logo for the Miami Heat?", ["heat", "stars", "lakers", "patriots"], "heat"),
+        new Question("Which is the logo for FC Barcelona?", ["real madrid", "tottenham", "barcelona", "arsenal"], "barcelona"),
+        new Question("Which is the logo for New England Patriots?", ["patriots", "blue jackets", "heat", "bulls"], "patriots"),
+        new Question("Which is the logo for the Jacksonville Jaguars?", ["stars", "ravens", "jaguars", "hornets"], "jaguars"),
+        new Question("Which is the logo for the Dallas Stars?", ["golden knights", "stars", "yankees", "real madrid"], "stars"),
+        new Question("SIUUUU?", ["siu", "lebron", "antonio brown", "mbappe"], "siu")
     ];
 
     function shuffleArray(array) {

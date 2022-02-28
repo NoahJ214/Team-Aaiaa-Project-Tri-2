@@ -98,6 +98,22 @@ def imageQuiz():
 def roster():
     return render_template("roster.html")
 
+@app.route('/quizindex')
+def quizindex():
+    return render_template("quizindex.html")
+
+@app.route('/highscores')
+def highscores():
+    return render_template("highscores.html")
+
+@app.route('/game')
+def game():
+    return render_template("game.html")
+
+@app.route('/end')
+def end():
+    return render_template("end.html")
+
 @app.route('/scratch')
 def scratch():
     return render_template("pabl/scratch.html")
