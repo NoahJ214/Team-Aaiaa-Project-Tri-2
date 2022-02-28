@@ -112,10 +112,18 @@
 </div>
 <script type="text/javascript">
     var images = {
-        "bat"  : "static/assets/baseball bat.jpg",
-        "sweatpants" : "static/assets/sweatpants.jpg",
-        "soccer" : "static/assets/soccer ball.jpg",
-        "shoes" : "static/assets/running shoes.jpg"
+        "blue jackets" : "/static/assets/Blue Jackets.png",
+        "cardinals" : "/static/assets/cardinals.png",
+        "dolphins" : "/static/assets/dolphins.png",
+        "ducks" : "/static/assets/Ducks.png",
+        "eagles" : "/static/assets/eagles.png",
+        "falcons" : "/static/assets/falcons.png",
+        "golden knights" : "/static/assets/Golden Knights.png",
+        "jaguars" : "/static/assets/jaguars.png",
+        "lakers" : "/static/assets/Lakers.png",
+        "patriots" : "/static/assets/patriots.png",
+        "ravens" : "/static/assets/ravens.png",
+        "stars" : "/static/assets/Stars.png"
 
     }
     function populate() {
@@ -161,11 +169,11 @@
 
     // create questions
     var questions = [
-        new Question("swetmans?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Sss0os?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Crob?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Bob?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
-        new Question("Bat?", ["bat", "sweatpants", "soccer", "shoes"], "se")
+        new Question("Which is the logo for the Los Angeles Lakers?", ["bat", "lakers", "soccer", "shoes"], "shoes"),
+        new Question("Which is the logo for the Golden State Warriors?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
+        new Question("Which is the logo for the Cincinnati Bengals?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
+        new Question("Which is the logo for the New Orleans Saints?", ["bat", "sweatpants", "soccer", "shoes"], "shoes"),
+        new Question("Which is the logo for the Anaheim Ducks?", ["bat", "sweatpants", "soccer", "shoes"], "se")
     ];
 
     function shuffleArray(array) {
