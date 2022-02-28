@@ -90,6 +90,10 @@ def jeopardy():
 def countdown():
     return render_template("countdown.html")
 
+@app.route('/imageQuiz')
+def imageQuiz():
+    return render_template("imageQuiz.html")
+
 @app.route('/roster')
 def roster():
     return render_template("roster.html")
